@@ -1,198 +1,131 @@
-# 🦦 OtterProof — 智能数据验证与上链存证系统
+# 🦦 OtterProof
 
-## 一、项目概述
+> Data validation and on-chain notarization for Sui + Walrus ecosystems.
 
-### 项目简介
+OtterProof is a decentralized data validation layer that inspects CSV/JSONL datasets, scores their quality, produces machine-readable reports, and anchors proofs on-chain. It gives AI data marketplaces, storage providers, and Web3 builders a repeatable way to prove that every dataset is complete, well-structured, and privacy-safe before it moves downstream.
 
-**OtterProof** 是一个基于 **Sui + Walrus** 的去中心化数据验证与证明系统。  
-它帮助数据市场、AI 数据平台以及 Web3 应用快速验证上传数据的质量、结构与隐私安全性，并生成**可上链的验证报告与凭证**。
+## Table of Contents
+- [🦦 OtterProof](#-otterproof)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Key Features](#key-features)
+  - [Architecture](#architecture)
+  - [Project Structure](#project-structure)
+  - [Getting Started](#getting-started)
+    - [Requirements](#requirements)
+    - [Installation](#installation)
+    - [Development](#development)
+  - [Configuration](#configuration)
+  - [Available Scripts](#available-scripts)
+  - [Roadmap](#roadmap)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Further Reading](#further-reading)
 
-OtterProof 的目标是成为 **Sui 生态的数据可信验证层（Data Validation Layer）** ——  
-让每一份数据在上链前都能证明自己的完整性与价值。
+## Overview
+- **Purpose:** act as the trusted "data validation layer" between Walrus storage and Sui smart contracts.
+- **Core Workflow:** upload schema → upload dataset → run automated checks → publish report to Walrus → commit report digest to Sui → share verifiable link with consumers.
+- **Status:** early prototype (Day 1 of implementation). The legacy Chinese project brief lives in `docs/project-plan.zh.md`.
 
-### 一句话描述
->
-> “让数据像海獭一样聪明地自证（Where data gets smartly verified）。”
+## Key Features
+- **Composable schema templates** — define reusable field constraints, regex guards, and privacy rules powered by JSON Schema + Move definitions.
+- **Streaming validation service** — Fastify/Node pipeline parses large CSV/JSONL files, measures missing/duplicate rates, and flags privacy hits without loading the entire dataset into memory.
+- **Report generator** — outputs deterministic JSON payloads along with visual summaries for the web dashboard.
+- **Walrus & Sui anchoring** — pushes full reports to Walrus for availability while persisting cryptographic digests on Sui via Move contracts.
+- **Wallet-ready Web UI** — Next.js front-end for uploading data, reviewing scores, and signing on-chain submissions with Sui wallets.
+- **Privacy-aware mode** — optional encrypted payloads (future Seal integration) for sensitive datasets.
 
----
-
-## 二、叙事与背景
-
-### 问题：Web3 数据市场的“质量黑箱”
-
-随着去中心化存储与数据市场兴起，任何人都能上传并交易数据。但新的问题出现了：
-
-- ❌ 数据格式混乱、缺失严重，买方难以评估质量  
-- ❌ 缺乏统一 Schema 与可验证标准  
-- ❌ 市场审查成本高，人工筛查效率低  
-- ❌ 数据上传者缺乏“合格证明”，难以建立信任  
-
-> 结果：数据市场虽开放，却成为“数据垃圾场”，缺乏真实价值。
-
-### 机遇：Walrus + Sui 的新数据基础设施
-
-Walrus 提供了去中心化存储与可用性层，而 Sui 负责资产与逻辑层。  
-但中间仍缺少一个关键环节 —— **数据质量与真实性验证层（Data Validation Layer）**。
-
-OtterProof 正是在这个空白点诞生，它为数据提供：
-
-- 可验证的 **结构与格式检查**
-- 可追溯的 **上链验证报告**
-- 可组合的 **数据质量标准（Schema）**
-
----
-
-## 三、产品设计
-
-### 🎯 产品目标
-
-让开发者、数据提供者和市场平台都能：
-
-1. 轻松验证数据集质量；
-2. 生成可信、可上链的验证报告；
-3. 以标准化方式展示数据的质量证明。
-
----
-
-### 🧩 功能模块
-
-| 模块 | 功能说明 | 技术说明 |
-|------|-----------|-----------|
-| **Schema 模板系统** | 注册数据规范，定义字段类型、格式、正则、隐私限制等 | Move 合约 + JSON Schema |
-| **数据校验引擎** | 自动检测缺失率、重复率、字段错误、隐私命中等 | Fastify/Node 流式校验 + Re2 正则 |
-| **报告生成器** | 输出机器可读 JSON + 可视化 HTML 报告 | Handlebars 模板 + 评分模型 |
-| **上链存证系统** | 报告上传至 Walrus，哈希与摘要记录上链 | `@mysten/sui.js` + Walrus SDK |
-| **前端应用** | 上传数据、一键验证、报告可视化、链上凭证查看 | Next.js + Tailwind + Sui Wallet |
-| **隐私模式（可选）** | 对含隐私信息的报告加密，仅授权地址可查看 | Seal（未来扩展） |
-
----
-
-### 📈 报告结构（简化示例）
-
-```json
-{
-  "schema": "news_comments_v1",
-  "summary": {
-    "passed": true,
-    "score": 92,
-    "errors": 3,
-    "warnings": 7
-  },
-  "metrics": {
-    "missing_rate": 0.012,
-    "duplicate_rate": 0.005,
-    "privacy_hits": 3
-  },
-  "checks": [
-    { "rule": "type_check", "target": "timestamp", "result": "pass" },
-    { "rule": "privacy_regex", "target": "comment_text", "result": "warn" }
-  ],
-  "walrus_ref": "walrus://.../report.json",
-  "onchain_ref": "sui://.../object_id"
-}
-````
-
----
-
-## 四、系统架构
-
+## Architecture
 ```
-┌────────────────────────────┐
-│        Next.js 前端        │
-│ 上传数据 → 可视化报告 → 钱包签名 │
-└──────────────┬──────────────┘
-               │
-┌──────────────▼──────────────┐
-│  Fastify 校验服务（Node.js）│
-│ 校验数据 → 生成报告 → 上传 Walrus │
-└──────────────┬──────────────┘
-               │
-     ┌─────────▼─────────┐
-     │ Sui Move 合约     │
-     │ Schema / Dataset / Report │
-     └─────────┬─────────┘
-               │
-        ┌──────▼──────┐
-        │ Walrus 存储 │
-        │ 报告与数据集 │
-        └──────────────┘
+┌───────────────┐     Upload & sign     ┌──────────────┐
+│ Next.js Web   │ ─────────────────────▶ │ Fastify API  │
+│ app (apps/web)│ ◀───── Status/Reports  │ validator    │
+└──────┬────────┘                        └────┬─────────┘
+       │ JSON reports / refs                   │ Digest + refs
+       ▼                                       ▼
+┌──────────────┐                       ┌─────────────────┐
+│ Walrus store │ ◀────── report blob ─ │ Sui Move module │
+└──────────────┘                       └─────────────────┘
 ```
 
----
+- **apps/web** — Next.js + Tailwind dashboard with wallet integration and report visualization.
+- **apps/api** — Fastify service handling schema registry, validation jobs, scoring, and Walrus uploads.
+- **packages/move** — Sui Move module that records schema definitions, datasets, and report proofs.
 
-## 五、技术栈
+## Project Structure
+```
+otterproof/
+├── apps/
+│   ├── web/   # Next.js front-end
+│   └── api/   # Fastify validation service
+├── packages/
+│   └── move/  # Sui Move contracts
+├── docs/      # Documentation (includes legacy Chinese brief)
+├── docker-compose.yml
+├── pnpm-workspace.yaml
+└── package.json
+```
 
-| 层级   | 技术栈                                           | 说明                             |
-| ---- | --------------------------------------------- | ------------------------------ |
-| 前端   | Next.js + TypeScript + TailwindCSS + Recharts | UI + 钱包交互 + 可视化                |
-| 校验服务 | Fastify + csv-parse + Ajv + Re2               | 流式解析 + 规则校验                    |
-| 合约   | Sui Move                                      | 链上记录 Schema / Dataset / Report |
-| 存储   | Walrus                                        | 分布式报告与数据文件存储                   |
-| 工具   | pnpm Monorepo + Docker + ESLint + Jest        | 整体管理与测试                        |
+## Getting Started
+### Requirements
+- Node.js >= 18.17 (use `nvm` or `fnm` if needed)
+- pnpm 9.12+ (`corepack enable pnpm` recommended)
+- Sui CLI + Walrus CLI for interacting with dev/test networks (optional during UI/API dev)
 
----
+### Installation
+```bash
+pnpm install
+```
 
-## 六、核心创新点
+### Development
+- Run everything: `pnpm dev` (spawns `apps/*` dev servers in parallel).
+- Web only: `pnpm dev:web` then visit [http://localhost:3000](http://localhost:3000).
+- API only: `pnpm dev:api` (Fastify on port 4000 by default).
+- Docker alternative: `docker-compose up api web` to run both services inside Node 20 containers with shared source mounts.
 
-1. **去中心化数据验证层**
+## Configuration
+Copy `.env.example` to `.env` (root or per service) and adjust:
 
-   - 结合 Walrus 存储与 Sui 上链逻辑，实现完整验证闭环。
-2. **可组合 Schema 标准**
+| Variable | Description |
+| --- | --- |
+| `NEXT_PUBLIC_API_BASE_URL` | Web app base URL for calling the Fastify API. |
+| `PORT` | API listening port. |
+| `LOG_LEVEL` | Fastify log verbosity (`info`, `debug`, etc.). |
+| `WALRUS_ENDPOINT` | Walrus RPC endpoint for uploading report blobs. |
+| `SUI_RPC` | Sui fullnode endpoint used by the API and CLI scripts. |
 
-   - 允许社区定义并复用数据格式模板（开放注册）。
-3. **双报告模式**
+## Available Scripts
+Use pnpm from the repo root:
 
-   - 公开摘要报告 + 私有详细报告（可扩展 Seal 模式）。
-4. **评分模型透明**
+| Command | Description |
+| --- | --- |
+| `pnpm dev` | Start all workspaces in watch mode. |
+| `pnpm build` | Build every package/app. |
+| `pnpm lint` | Run shared lint rules across the monorepo. |
+| `pnpm test` | Execute workspace tests (Vitest/Jest). |
+| `pnpm typecheck` | Run TypeScript builds for all projects. |
+| `pnpm format` | Apply formatting presets (Prettier/ESLint). |
 
-   - 校验结果算法开源，评分机制公开可验证。
-5. **未来可演化为协议层**
+## Roadmap
+Roadmap milestones for the hackathon sprint are tracked in `docs/project-plan.zh.md`. High-level goals:
+1. Stand up monorepo scaffolding and Move contract skeleton.
+2. Ship validation engine with schema registry and scoring.
+3. Integrate Walrus storage + Sui on-chain proofs.
+4. Polish UI/UX with wallet flows and reporting visualizations.
+5. Harden with tests, docs, and demo assets.
 
-   - 成为数据市场、AI 训练平台的通用“Data Validation Protocol”。
+## Contributing
+Contributions are welcome! Please:
+1. Fork and create a branch (`feat/<name>`).
+2. Run `pnpm lint && pnpm test` before opening a PR.
+3. Describe validation steps and any Walrus/Sui hashes referenced.
 
----
+## License
+MIT
 
-## 七、用户使用流程
+## Further Reading
+- Legacy Chinese narrative, architecture notes, and 5-day sprint plan: [`docs/project-plan.zh.md`](docs/project-plan.zh.md)
+- Sui Move language docs: https://docs.sui.io/
+- Walrus storage docs: https://walrus.io/docs
 
-1. **上传 Schema 或选择模板**
-2. **上传数据文件（CSV/JSONL）**
-3. **OtterProof 自动校验**
-
-   - 检查结构、缺失、重复、隐私
-   - 输出分数与可视化报告
-4. **报告上传到 Walrus**
-5. **在 Sui 上提交验证凭证**
-6. **查看链上验证结果**
-
----
-
-## 八、项目时间线与开发计划（5 天）
-
-| 日期        | 任务                                         | 目标           |
-| --------- | ------------------------------------------ | ------------ |
-| **Day 1** | 搭建 Monorepo 环境、Next.js + Fastify 骨架、合约初始结构 | 跑通 API 与页面框架 |
-| **Day 2** | 实现 CSV/JSONL 校验逻辑、评分模型与报告生成                | 校验报告可本地生成    |
-| **Day 3** | 接入 Walrus 存储与 Sui 上链                       | 报告可上链存证      |
-| **Day 4** | 完善前端 UI（上传、展示、图表）+ 钱包签名交互                  | 完整闭环体验       |
-| **Day 5** | 测试 + 打磨演示 + 文档整理 + 提交视频                    | 最终可演示版本      |
-
----
-
-## 九、未来路线图
-
-| 阶段      | 目标      | 内容                                     |
-| ------- | ------- | -------------------------------------- |
-| Phase 1 | 工具 → 协议 | 发布开源 SDK 与 Schema Registry             |
-| Phase 2 | 引入激励机制  | 验证者质押与奖励模型                             |
-| Phase 3 | 隐私增强    | 集成 Seal，实现加密报告访问控制                     |
-| Phase 4 | 生态集成    | 对接 Walrus Market / AI DataHub / 去中心化计算 |
-
----
-
-## 十、结语
-
-**OtterProof** 以“聪明、温和、可信”的理念，为 Web3 数据世界带来第一层“质量护盾”。
-在数据的海洋中，它像海獭一样，用工具清洗每一颗石子，
-让数据在上链前就能证明自己的完整性与价值。
-
-> 🦦 *OtterProof — Where data gets smartly verified.
+> 🦦 OtterProof — Where data gets smartly verified.
