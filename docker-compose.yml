@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  api:
+    image: node:20-bullseye
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: bash -lc "corepack enable pnpm && pnpm install && pnpm --filter api dev"
+    ports:
+      - "4000:4000"
+    env_file:
+      - .env.example
+  web:
+    image: node:20-bullseye
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+    command: bash -lc "corepack enable pnpm && pnpm install && pnpm --filter web dev"
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.example
