@@ -25,13 +25,13 @@ OtterProof is a decentralized data validation layer that inspects CSV/JSONL data
 ## Overview
 - **Purpose:** act as the trusted "data validation layer" between Walrus storage and Sui smart contracts.
 - **Core Workflow:** upload schema → upload dataset → run automated checks → publish report to Walrus → commit report digest to Sui → share verifiable link with consumers.
-- **Status:** early prototype (Day 1 of implementation). The legacy Chinese project brief lives in `docs/project-plan.zh.md`.
+- **Status:** Day 3 prototype — validation engine now exposes Walrus uploads + Sui digest anchoring behind the new `publish` flag. The legacy Chinese project brief lives in `docs/project-plan.zh.md`.
 
 ## Key Features
 - **Composable schema templates** — define reusable field constraints, regex guards, and privacy rules powered by JSON Schema + Move definitions.
 - **Streaming validation service** — Fastify/Node pipeline parses large CSV/JSONL files, measures missing/duplicate rates, and flags privacy hits without loading the entire dataset into memory.
 - **Report generator** — outputs deterministic JSON payloads along with visual summaries for the web dashboard.
-- **Walrus & Sui anchoring** — pushes full reports to Walrus for availability while persisting cryptographic digests on Sui via Move contracts.
+- **Walrus & Sui anchoring** — (Day 3) Fastify API can now push reports to Walrus and synthesize Sui digests on demand when clients set the `publish` flag.
 - **Wallet-ready Web UI** — Next.js front-end for uploading data, reviewing scores, and signing on-chain submissions with Sui wallets.
 - **Privacy-aware mode** — optional encrypted payloads (future Seal integration) for sensitive datasets.
 

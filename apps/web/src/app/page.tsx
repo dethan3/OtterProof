@@ -1,15 +1,15 @@
 import { ValidationPlayground } from "./_components/validation-playground";
 
 const heroStats = [
-  { label: "验证吞吐", value: "5GB/min" },
-  { label: "精度评分", value: "> 92" },
-  { label: "Walrus 引用", value: "链上可追溯" }
+  { label: "Day4 交付", value: "UI + Wallet Ready" },
+  { label: "Walrus 引用", value: "实时生成" },
+  { label: "Sui 签名", value: "Demo 钱包" }
 ];
 
-const dayOneGoals = [
-  "初始化 Monorepo 与工具链",
-  "搭建 Next.js 前端框架",
-  "预留与 Fastify API 的集成通道"
+const dayFourGoals = [
+  "拖拽上传 CSV / JSONL，一键注入校验引擎",
+  "指标图表 + 存证回执可视化，便于分享",
+  "示例钱包连接与签名，串联 Walrus → Sui 流程"
 ];
 
 const modules = [
@@ -22,15 +22,15 @@ const modules = [
     description: "Fastify 校验引擎流式分析缺失率、重复率与隐私风险。"
   },
   {
-    title: "生成报告",
-    description: "报告通过 Walrus 永久存储，哈希摘要提交至 Sui。"
+    title: "链上签名",
+    description: "Walrus 回执 + Sui 摘要，示例钱包可直接签署摘要。"
   }
 ];
 
-const dayTwoHighlights = [
-  "流式解析 CSV / JSONL，控制在 2k 行以内快速反馈",
-  "Schema 级缺失率、类型错误、重复率的指标与扣分模型",
-  "隐私命中（邮箱/手机号/ID）实时阻断 + Rectify 建议"
+const dayFourHighlights = [
+  "新增文件上传控件，自动检测格式并注入 Playground",
+  "评分卡 + 指标图表 + Walrus / Sui 回执在同一视图展示",
+  "Demo 钱包接入，可模拟 Sui 签名确认上链摘要"
 ];
 
 export default function HomePage() {
@@ -39,13 +39,11 @@ export default function HomePage() {
       <section className="mx-auto flex w-full max-w-5xl flex-col gap-10">
         <header className="space-y-6 text-center">
           <p className="text-sm uppercase tracking-[0.4em] text-brand-light">
-            Day 1 → Day 2 · Engine Online
+            Day 3 → Day 4 · UI + Wallet Loop
           </p>
-          <h1 className="text-4xl font-semibold md:text-5xl">
-            OtterProof — 数据在上链前的第一层验证防线
-          </h1>
+          <h1 className="text-4xl font-semibold md:text-5xl">OtterProof — 数据在上链前的第一层验证防线</h1>
           <p className="text-base text-slate-300 md:text-lg">
-            第一天完成 Monorepo 骨架后，Day 2 聚焦 CSV/JSONL 校验引擎与评分模型，输出可直接上链的报告。
+            Day 4 对准“可演示体验”：拖拽上传、指标图表、Walrus / Sui 回执以及示例钱包签名，完整体现验证→存证闭环。
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             {heroStats.map((stat) => (
@@ -59,13 +57,13 @@ export default function HomePage() {
 
         <section className="grid gap-6 rounded-3xl border border-slate-800/60 bg-slate-900/30 p-6 md:grid-cols-2">
           <div>
-            <h2 className="text-2xl font-semibold">今日目标</h2>
+            <h2 className="text-2xl font-semibold">Day 4 Focus</h2>
             <p className="mt-2 text-sm text-slate-400">
-              完成本地开发环境与 UI 骨架，并逐步扩展到真实校验逻辑与报告。
+              UI / 交互升级，补齐文件上传、可视指标与钱包签名体验。
             </p>
           </div>
           <ul className="space-y-3 text-sm text-slate-200">
-            {dayOneGoals.map((goal) => (
+            {dayFourGoals.map((goal) => (
               <li key={goal} className="flex items-center gap-2">
                 <span className="text-brand-light">◆</span>
                 <span>{goal}</span>
@@ -89,10 +87,10 @@ export default function HomePage() {
         <section className="rounded-3xl border border-slate-800/60 bg-slate-900/30 p-6">
           <div className="grid gap-6 md:grid-cols-2">
             <div>
-              <p className="text-sm uppercase tracking-[0.4em] text-brand-light">Day 2 Deliverables</p>
-              <h2 className="mt-2 text-2xl font-semibold">CSV / JSONL 校验 + 可视化评分</h2>
+              <p className="text-sm uppercase tracking-[0.4em] text-brand-light">Day 4 Deliverables</p>
+              <h2 className="mt-2 text-2xl font-semibold">上传 · 报告 · 签名一体化</h2>
               <ul className="mt-4 space-y-3 text-sm text-slate-200">
-                {dayTwoHighlights.map((item) => (
+                {dayFourHighlights.map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <span className="mt-1 text-brand-light">◆</span>
                     <span>{item}</span>
@@ -100,8 +98,7 @@ export default function HomePage() {
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-400">
-                下方 Playground 直接调用 Fastify API，展示缺失率、类型错误、隐私命中以及打分结构，便于 Day
-                3 接入 Walrus + Sui。
+                下方 Playground 直接串联 Fastify API 与 Walrus/Sui 存证演示：上传文件 → 校验评分 → 查看摘要 → 连接钱包模拟签名。
               </p>
             </div>
             <div className="rounded-2xl border border-slate-800/70 bg-slate-900/50 p-4 text-sm text-slate-300">
