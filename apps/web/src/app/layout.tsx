@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { SiteHeader } from "./_components/site-header";
 import "./globals.css";
 
 type RootLayoutProps = {
@@ -14,7 +15,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="zh-CN">
-      <body>{children}</body>
+      <body className="bg-slate-950 text-slate-100">
+        <SiteHeader />
+        {children}
+      </body>
     </html>
   );
 }

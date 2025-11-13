@@ -297,7 +297,7 @@ export function ValidationPlayground() {
     <div className="rounded-3xl border border-slate-800/70 bg-slate-900/40 p-6 shadow-2xl shadow-slate-950/60">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <p className="text-xs uppercase tracking-[0.4em] text-brand-light/80">Day 2</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-brand-light/80">Playground</p>
           <h2 className="text-2xl font-semibold">校验引擎 · CSV / JSONL</h2>
           <p className="text-sm text-slate-400">
             将数据集内容直接粘贴在下方，一键生成评分、指标与整改建议。
