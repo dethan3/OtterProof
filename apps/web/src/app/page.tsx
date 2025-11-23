@@ -82,18 +82,18 @@ export default function HomePage() {
               variants={fadeInUp}
               className="text-4xl font-black leading-[1.05] tracking-tight md:text-5xl lg:text-6xl"
             >
-              为 AI 市场
+              Verifiable data rails
               <br />
-              输出可信的 <span className="underline decoration-[12px] decoration-[#ffe76b]">数据证明</span>
+              for AI-native marketplaces
             </motion.h1>
             <motion.p variants={fadeInUp} className="max-w-2xl text-lg leading-relaxed text-[#1f2937] md:text-xl">
-              Upload CSV/JSONL, auto-score quality, anchor receipts on Walrus, and sign with Sui — all inside a playful,
-              high-contrast Playground built for teams shipping data markets.
+              Ingest CSV/JSONL payloads, run structural and quality checks, anchor receipts on Walrus, and mint
+              attestations on Sui. OtterProof gives your AI marketplace a proof-first, production-ready data pipeline.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
               <Link
                 href="/playground"
-                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#0c0b16] px-7 py-3 text-sm font-bold uppercase tracking-[0.24em] text-white shadow-[8px_8px_0_#0c0b16] transition hover:-translate-y-1 hover:shadow-[12px_12px_0_#0c0b16]"
+                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#7ef5dc] px-7 py-3 text-sm font-bold uppercase tracking-[0.24em] text-[#0c0b16] shadow-[8px_8px_0_#0c0b16] transition hover:-translate-y-1 hover:shadow-[12px_12px_0_#0c0b16]"
               >
                 Launch Playground
               </Link>
@@ -101,7 +101,7 @@ export default function HomePage() {
                 href="#workflow"
                 className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#ffe76b] px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] transition hover:-translate-y-1"
               >
-                查看流程 →
+                View workflow →
               </a>
             </motion.div>
             <motion.div variants={fadeInUp} className="grid gap-3 sm:grid-cols-3">
@@ -142,11 +142,14 @@ export default function HomePage() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="space-y-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#0c0b16]">Product Highlights</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#0c0b16]">
+              Product Highlights 
+              Data & Protocol
+            </p>
             <h2 className="text-3xl font-black leading-tight text-[#0c0b16]">Loud, playful, but strict on data.</h2>
             <p className="text-sm text-[#1f2937]">
-              Every card carries a thick outline because every step is auditable. Upload → Validate → Attest → Sign,
-              without leaving the Playground.
+              Every stage of the pipeline is explicit and inspectable: ingest → validate → attest → sign. The Playground
+              is a thin interface over the same Walrus + Sui primitives you would wire into your production stack.
             </p>
           </div>
           <ul className="space-y-4 text-sm text-[#0c0b16]">
@@ -166,7 +169,7 @@ export default function HomePage() {
 
         <motion.section
           id="workflow"
-          className="rounded-3xl border-2 border-[#0c0b16] bg-[#0c0b16] p-6 text-white shadow-[12px_12px_0_#0c0b16]"
+          className="rounded-3xl border-2 border-[#0c0b16] bg-[#1f2937] p-6 text-white shadow-[12px_12px_0_#0c0b16]"
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
@@ -176,9 +179,10 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#7ef5dc]">Workflow</p>
-              <h3 className="mt-2 text-3xl font-black leading-tight text-[#ffe76b]">验证 → 存储 → 签名</h3>
+              <h3 className="mt-2 text-3xl font-black leading-tight text-[#ffe76b]">Validate → Store → Sign</h3>
               <p className="mt-2 max-w-2xl text-sm text-slate-200">
-                Built to feel like a sticker sheet but wired for rigorous data control. Follow the steps, ship proofs.
+                The UI looks playful, but it drives real infrastructure: Walrus blobs, Sui objects, and on-chain
+                attestations. Step through the workflow to see how a raw dataset becomes a verifiable, tradable asset.
               </p>
             </div>
             <Link
@@ -219,7 +223,7 @@ export default function HomePage() {
           <div className="grid gap-6 md:grid-cols-2">
             <div className="space-y-4">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#0c0b16]">Capabilities</p>
-              <h2 className="text-3xl font-black leading-tight text-[#0c0b16]">Upload · Report · Sign，一张桌面完成</h2>
+              <h2 className="text-3xl font-black leading-tight text-[#0c0b16]">Ingest · Analyze · Attest — all in one surface</h2>
               <ul className="space-y-3 text-sm text-[#0c0b16]">
                 {workflowHighlights.map((item) => (
                   <li
@@ -232,8 +236,9 @@ export default function HomePage() {
                 ))}
               </ul>
               <p className="text-sm text-[#1f2937]">
-                Playground 把 Tusk API、Walrus 存储以及 Sui 签名塞进同一流中。上传文件 → 评分 → 查看 Walrus 引用 →
-                用钱包签名，整个链路一次完成。
+                The Playground stitches together the Tusk SDK, Walrus storage, and Sui transactions into a single
+                repeatable flow. Push a file, generate a quality report, pin a Walrus reference, then build and sign the
+                attestation transaction with your wallet.
               </p>
             </div>
             <div className="relative space-y-4 rounded-2xl border-2 border-[#0c0b16] bg-[#f7f3e8] p-5 shadow-[10px_10px_0_#0c0b16]">
@@ -241,23 +246,23 @@ export default function HomePage() {
               <ul className="space-y-2 text-sm text-[#0c0b16]">
                 <li className="flex items-center gap-2 font-semibold">
                   <span className="grid h-3 w-3 place-items-center rounded-[6px] border border-[#0c0b16] bg-[#ffe76b]" />
-                  Missing Rate 45% — required fields trigger direct warnings
+                  Missing Rate 45% — required fields flagged at record level
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
                   <span className="grid h-3 w-3 place-items-center rounded-[6px] border border-[#0c0b16] bg-[#7ef5dc]" />
-                  Type Error 35% — enforce numeric / bool / date formats
+                  Type Error 35% — strict numeric / boolean / date enforcement
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
                   <span className="grid h-3 w-3 place-items-center rounded-[6px] border border-[#0c0b16] bg-[#c4b5ff]" />
-                  Duplication 20% — penalize primary-key collisions
+                  Duplication 20% — primary-key collision penalties
                 </li>
                 <li className="flex items-center gap-2 font-semibold">
                   <span className="grid h-3 w-3 place-items-center rounded-[6px] border border-[#0c0b16] bg-[#ffb4d3]" />
-                  Privacy Hits 3 pts/item — phone / email / ID block attestation
+                  Privacy Hits 3 pts/item — PII (email / phone / ID) blocks attestation
                 </li>
               </ul>
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#0c0b16]">
-                Score ≥ 70 且无隐私命中方可出链。
+                Only datasets with Score ≥ 70 and zero privacy hits qualify for on-chain attestation.
               </p>
             </div>
           </div>
@@ -331,7 +336,7 @@ function HeroStickerBoard() {
 function HeroWalletChip() {
   return (
     <motion.div
-      className="relative -mb-2 flex items-center gap-3 rounded-2xl border-2 border-[#0c0b16] bg-[#0c0b16] px-4 py-3 text-xs text-white shadow-[10px_10px_0_#0c0b16]"
+      className="relative -mb-2 flex items-center gap-3 rounded-2xl border-2 border-[#0c0b16] bg-[#7ef5dc] px-4 py-3 text-xs text-[#0c0b16] shadow-[10px_10px_0_#0c0b16]"
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.85, duration: 0.45, ease: "easeOut" }}
@@ -341,8 +346,8 @@ function HeroWalletChip() {
         ₿
       </div>
       <div>
-        <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#7ef5dc]">Demo Wallet</p>
-        <p className="font-mono text-sm font-semibold text-white">0x8a4c…f207</p>
+        <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#0c0b16]">Demo Wallet</p>
+        <p className="font-mono text-sm font-semibold text-[#0c0b16]">0x8a4c…f207</p>
       </div>
       <span className="ml-auto rounded-full border-2 border-white bg-white px-3 py-1 text-[10px] font-black uppercase tracking-[0.3em] text-[#0c0b16] shadow-[4px_4px_0_#7ef5dc]">
         Ready

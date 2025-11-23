@@ -13,19 +13,21 @@ export default function PlaygroundPage() {
             Playground · Walrus + Sui
             <span className="h-2 w-2 rounded-full bg-[#ff6b6b] ring-2 ring-[#0c0b16]" />
           </div>
-          <h1 className="text-4xl font-black leading-[1.05] md:text-5xl">实时数据校验 · 存证 · 签名 演示台</h1>
+          <h1 className="text-4xl font-black leading-[1.05] md:text-5xl">Real-time data validation and attestation playground</h1>
           <p className="max-w-3xl text-lg leading-relaxed text-[#1f2937] md:text-xl">
-            上传 CSV / JSONL，查看评分、Walrus 引用与 Sui 摘要回执，并使用示例钱包完成签名流程。界面采用新野兽派贴纸风格，强调「Proof-first」。
+            Upload CSV / JSONL datasets, inspect validation metrics, Walrus blob references, and Sui transaction digests,
+            then complete the signing flow with a demo wallet. This is a thin, opinionated UI built directly on top of
+            the Tusk SDK and the underlying Walrus + Sui rails.
           </p>
           <div className="flex flex-wrap items-center gap-3 text-sm font-semibold uppercase tracking-[0.2em]">
             <Link
               href="/"
               className="inline-flex items-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#ffe76b] px-4 py-2 text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] transition hover:-translate-y-0.5"
             >
-              返回首页 ↗
+              Back to home ↗
             </Link>
             <span className="inline-flex items-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#7ef5dc] px-4 py-2 text-[#0c0b16] shadow-[6px_6px_0_#0c0b16]">
-              数据格式：CSV / JSONL
+              Data formats: CSV / JSONL
             </span>
           </div>
         </header>

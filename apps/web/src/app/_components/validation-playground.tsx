@@ -377,7 +377,7 @@ export function ValidationPlayground() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full rounded-2xl border-2 border-[#0c0b16] bg-[#0c0b16] px-4 py-3 text-sm font-black uppercase tracking-[0.22em] text-white shadow-[10px_10px_0_#0c0b16] transition hover:-translate-y-1 disabled:cursor-not-allowed disabled:opacity-60"
+                    className="w-full rounded-2xl border-2 border-[#0c0b16] bg-[#7ef5dc] px-4 py-3 text-sm font-black uppercase tracking-[0.22em] text-[#0c0b16] shadow-[10px_10px_0_#0c0b16] transition hover:-translate-y-1 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                     {loading ? "Processing..." : "Upload to Walrus & Validate"}
                 </button>
@@ -401,7 +401,7 @@ export function ValidationPlayground() {
 
                 {/* Validation Report */}
                 {report && (
-                    <section className="space-y-4 rounded-3xl border-2 border-[#0c0b16] bg-[#0c0b16] p-5 text-white shadow-[10px_10px_0_#0c0b16]">
+                    <section className="space-y-4 rounded-3xl border-2 border-[#0c0b16] bg-[#1f2937] p-5 text-white shadow-[10px_10px_0_#0c0b16]">
                          <div className="flex items-center justify-between">
                             <div>
                                 <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#7ef5dc]">Quality Score</p>

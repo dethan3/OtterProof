@@ -25,7 +25,7 @@ export function SiteHeader() {
               type="button"
               onClick={() => setShowTicker(false)}
               className="ml-auto grid h-6 w-6 place-items-center rounded-lg border-2 border-[#0c0b16] bg-white text-[12px] font-black leading-none shadow-[3px_3px_0_#0c0b16] transition hover:-translate-y-0.5"
-              aria-label="关闭提示"
+              aria-label="Close banner"
             >
               ✕
             </button>
@@ -65,8 +65,8 @@ export function SiteHeader() {
               );
             })}
           </nav>
-          <div className="flex items-center gap-3 rounded-2xl border-2 border-[#0c0b16] bg-[#0c0b16] px-3 py-2 text-white shadow-[5px_5px_0_#0c0b16]">
-            <span className="rounded-full bg-[#7ef5dc] px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0c0b16]">
+          <div className="flex items-center gap-3 rounded-2xl border-2 border-[#0c0b16] bg-[#7ef5dc] px-3 py-2 text-[#0c0b16] shadow-[5px_5px_0_#0c0b16]">
+            <span className="rounded-full bg-white px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0c0b16]">
               Connect
             </span>
             <ConnectButton />
