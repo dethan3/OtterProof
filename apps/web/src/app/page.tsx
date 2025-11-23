@@ -4,36 +4,36 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const heroStats = [
-  { label: "实时校验", value: "CSV + JSONL" },
-  { label: "Walrus 引用", value: "自动生成" },
-  { label: "Sui 签名", value: "Demo 钱包" }
+  { label: "Real-time", value: "CSV + JSONL" },
+  { label: "Walrus Ref", value: "Auto-gen" },
+  { label: "Sui Sign", value: "Demo Wallet" }
 ];
 
 const productPillars = [
-  "拖拽上传 CSV / JSONL，自动匹配 Schema",
-  "评分卡、指标图表与 Walrus / Sui 回执同屏展示",
-  "示例钱包连接与签名，串联验证 → 存证流程"
+  "Drag & Drop upload for CSV / JSONL with auto-schema matching",
+  "Unified dashboard for Scorecards, Metrics, and Walrus/Sui receipts",
+  "Connect wallet to sign & mint attestations in one flow"
 ];
 
 const modules = [
   {
-    title: "上传数据",
-    description: "拖拽 CSV/JSONL，系统自动识别结构并选择匹配的 Schema。"
+    title: "Upload Data",
+    description: "Drag CSV/JSONL files. System automatically identifies structure and matches schema."
   },
   {
-    title: "实时校验",
-    description: "Fastify 校验引擎流式分析缺失率、重复率与隐私风险。"
+    title: "Real-time Validation",
+    description: "Tusk Engine streams analysis for missing rates, duplicates, and privacy risks."
   },
   {
-    title: "链上签名",
-    description: "Walrus 回执 + Sui 摘要，示例钱包可直接签署摘要。"
+    title: "On-chain Attestation",
+    description: "Generate Walrus receipts + Sui digests. Sign directly with your wallet."
   }
 ];
 
 const workflowHighlights = [
-  "文件上传与格式识别完全集成在 Playground",
-  "评分卡、指标、Walrus / Sui 回执一体化展示",
-  "Demo 钱包可直接签署摘要，模拟上链确认"
+  "File upload & format recognition integrated in Playground",
+  "Unified view for Scorecards, Metrics, and Receipts",
+  "Sign digests directly to simulate on-chain confirmation"
 ];
 
 const heroContainer = {
@@ -76,10 +76,10 @@ export default function HomePage() {
               Data Validation Layer · Sui + Walrus
             </motion.span>
             <motion.h1 variants={fadeInUp} className="text-4xl font-semibold leading-tight md:text-5xl">
-              OtterProof — 数据在上链前的第一层验证防线
+              OtterProof — The First Line of Defense for On-Chain Data
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-base text-slate-300 md:text-lg">
-              拖拽上传、实时校验、Walrus 存证与 Sui 签名串联在一个 Playground，帮助数据市场与 AI 团队快速证明数据质量与可信度。
+              Upload, Validate, Store on Walrus, and Sign with Sui — all in one Playground. Helping data markets and AI teams prove data quality and trust.
             </motion.p>
             <motion.div variants={fadeInUp} className="grid gap-3 sm:grid-cols-3">
               {heroStats.map((stat, index) => (
@@ -100,13 +100,13 @@ export default function HomePage() {
                 href="/playground"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-light px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 shadow-[0_20px_45px_rgba(148,255,239,0.35)] transition hover:bg-brand-light/90"
               >
-                立即体验 Playground
+                Try Playground
               </Link>
               <a
                 href="#workflow"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-slate-200 hover:border-brand-light/60"
               >
-                了解验证流程 →
+                How it works &rarr;
               </a>
             </motion.div>
           </motion.div>
@@ -122,8 +122,8 @@ export default function HomePage() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div>
-            <h2 className="text-2xl font-semibold">产品亮点</h2>
-            <p className="mt-2 text-sm text-slate-300">围绕“验证 → 存证 → 签名”打造可直接演示的闭环体验。</p>
+            <h2 className="text-2xl font-semibold">Product Highlights</h2>
+            <p className="mt-2 text-sm text-slate-300">A complete closed-loop experience: Validate &rarr; Attest &rarr; Sign.</p>
           </div>
           <ul className="space-y-3 text-sm text-slate-200">
             {productPillars.map((item) => (
@@ -147,10 +147,10 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Workflow</p>
-              <h3 className="text-2xl font-semibold">核心流程 · 3 步完成上链前验证</h3>
+              <h3 className="text-2xl font-semibold">Core Process · Verify before on-chain in 3 steps</h3>
             </div>
             <Link href="/playground" className="text-sm text-brand-light hover:underline">
-              进入 Playground →
+              Enter Playground &rarr;
             </Link>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -180,8 +180,8 @@ export default function HomePage() {
         >
           <div className="grid gap-6 md:grid-cols-2">
             <div>
-              <p className="text-sm uppercase tracking-[0.4em] text-brand-light">能力一览</p>
-              <h2 className="mt-2 text-2xl font-semibold">上传 · 报告 · 签名一体化</h2>
+              <p className="text-sm uppercase tracking-[0.4em] text-brand-light">Capabilities</p>
+              <h2 className="mt-2 text-2xl font-semibold">Upload · Report · Sign Integrated</h2>
               <ul className="mt-4 space-y-3 text-sm text-slate-200">
                 {workflowHighlights.map((item) => (
                   <li key={item} className="flex items-start gap-2">
@@ -191,19 +191,19 @@ export default function HomePage() {
                 ))}
               </ul>
               <p className="mt-4 text-sm text-slate-400">
-                Playground 串联 Fastify API 与 Walrus / Sui 存证：上传文件 → 校验评分 → 查看摘要 → 连接钱包模拟签名。
+                The Playground connects Tusk API with Walrus / Sui attestation: Upload File &rarr; Score Data &rarr; View Receipt &rarr; Sign with Wallet.
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-slate-300">
-              <p className="text-xs uppercase tracking-[0.4em] text-slate-500">评分模型 (v0)</p>
+              <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Scoring Model (v0)</p>
               <ul className="mt-3 space-y-2">
-                <li>· 缺失率 45% 权重 — 必填字段缺失直接触发警告</li>
-                <li>· 类型错误 35% 权重 — 统一数值/布尔/时间格式</li>
-                <li>· 重复率 20% 权重 — 主键组合冲突即扣分</li>
-                <li>· 隐私命中 3 分/条 — 邮箱/手机号/ID 立即阻断上链</li>
+                <li>· Missing Rate 45% Weight — Direct warning for required fields</li>
+                <li>· Type Error 35% Weight — Enforce numeric/bool/date formats</li>
+                <li>· Duplication 20% Weight — Penalize key collisions</li>
+                <li>· Privacy Hits 3 pts/item — Phone/Email/ID blocks attestation</li>
               </ul>
               <p className="mt-3 text-xs text-slate-500">
-                得分 ≥ 70 且无隐私命中即可上链，否则给出整改建议。
+                Score &ge; 70 with no privacy hits required for attestation.
               </p>
             </div>
           </div>
@@ -215,10 +215,10 @@ export default function HomePage() {
 
 function HeroReportPreview() {
   const previewMetrics = [
-    { label: "缺失率", value: "1.2%" },
-    { label: "类型错误", value: "0.8%" },
-    { label: "重复率", value: "0.3%" },
-    { label: "隐私命中", value: "0 条" }
+    { label: "Missing", value: "1.2%" },
+    { label: "Type Err", value: "0.8%" },
+    { label: "Dup Rate", value: "0.3%" },
+    { label: "Privacy", value: "0 Hits" }
   ];
 
   return (
@@ -232,7 +232,7 @@ function HeroReportPreview() {
       <div className="relative space-y-5 rounded-[32px] border border-white/15 bg-slate-950/70 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.8)] backdrop-blur-2xl">
         <motion.div className="flex items-center justify-between" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.45 }}>
           <div>
-            <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Walrus 报告</p>
+            <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Walrus Report</p>
             <p className="text-lg font-semibold text-white">news_comments_demo</p>
           </div>
           <span className="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-200">Score 92</span>
@@ -257,9 +257,9 @@ function HeroReportPreview() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.65, duration: 0.45, ease: "easeOut" }}
         >
-          <p className="uppercase tracking-[0.4em] text-slate-500">链上引用</p>
+          <p className="uppercase tracking-[0.4em] text-slate-500">On-Chain Ref</p>
           <p className="mt-2 font-mono text-sm text-brand-light">walrus://0x94af...dd10</p>
-          <p className="text-xs text-slate-400">Sui 摘要 · 0xd4e9...71c3</p>
+          <p className="text-xs text-slate-400">Sui Digest · 0xd4e9...71c3</p>
         </motion.div>
         <HeroWalletChip />
       </div>
@@ -278,7 +278,7 @@ function HeroWalletChip() {
     >
       <div className="h-8 w-8 rounded-full bg-brand-light/30" />
       <div>
-        <p className="text-[10px] uppercase tracking-[0.4em] text-slate-500">Demo 钱包</p>
+        <p className="text-[10px] uppercase tracking-[0.4em] text-slate-500">Demo Wallet</p>
         <p className="font-mono text-sm text-white">0x8a4c…f207</p>
       </div>
       <span className="ml-auto rounded-full bg-brand-light/20 px-3 py-1 text-[10px] uppercase tracking-[0.4em] text-brand-light">Ready</span>

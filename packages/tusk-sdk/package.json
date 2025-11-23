@@ -1,0 +1,37 @@
+{
+    "name": "@otterlabs/tusk",
+    "version": "1.0.0",
+    "description": "TypeScript SDK for Tusk - The sharpest data validation layer for Walrus",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf dist",
+        "demo": "ts-node demo.ts"
+    },
+    "keywords": [
+        "tusk",
+        "walrus",
+        "sui",
+        "attestation",
+        "schema-validation",
+        "web3"
+    ],
+    "author": "OtterLabs",
+    "license": "MIT",
+    "dependencies": {
+        "@mysten/sui": "^1.14.0",
+        "ajv": "^8.12.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.3.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

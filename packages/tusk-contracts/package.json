@@ -1,0 +1,18 @@
+{
+    "name": "contracts-workspace",
+    "version": "1.0.0",
+    "description": "Tusk Protocol - Sui Move Contracts",
+    "private": true,
+    "scripts": {
+        "build": "sui move build",
+        "test": "sui move test",
+        "clean": "rm -rf build"
+    },
+    "keywords": [
+        "sui",
+        "move",
+        "smart-contract"
+    ],
+    "author": "OtterLabs",
+    "license": "MIT"
+}

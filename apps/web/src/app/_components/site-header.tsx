@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ConnectButton } from "@mysten/dapp-kit";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -40,14 +41,7 @@ export function SiteHeader() {
                 );
               })}
             </nav>
-            <button
-              type="button"
-              className="flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-200 shadow-inner shadow-white/10 transition hover:border-brand-light/60 hover:bg-brand-light/10"
-              disabled
-            >
-              <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-brand-light" />
-              Connect Wallet
-            </button>
+            <ConnectButton />
           </div>
         </div>
       </div>

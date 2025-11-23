@@ -1,131 +1,95 @@
 # 🦦 OtterProof
 
-> Data validation and on-chain notarization for Sui + Walrus ecosystems.
+> Decentralized Data Validation Layer for the Sui + Walrus Ecosystem.
 
-OtterProof is a decentralized data validation layer that inspects CSV/JSONL datasets, scores their quality, produces machine-readable reports, and anchors proofs on-chain. It gives AI data marketplaces, storage providers, and Web3 builders a repeatable way to prove that every dataset is complete, well-structured, and privacy-safe before it moves downstream.
-
-## Table of Contents
-- [🦦 OtterProof](#-otterproof)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-  - [Key Features](#key-features)
-  - [Architecture](#architecture)
-  - [Project Structure](#project-structure)
-  - [Getting Started](#getting-started)
-    - [Requirements](#requirements)
-    - [Installation](#installation)
-    - [Development](#development)
-  - [Configuration](#configuration)
-  - [Available Scripts](#available-scripts)
-  - [Roadmap](#roadmap)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Further Reading](#further-reading)
-
-## Overview
-- **Purpose:** act as the trusted "data validation layer" between Walrus storage and Sui smart contracts.
-- **Core Workflow:** upload schema → upload dataset → run automated checks → publish report to Walrus → commit report digest to Sui → share verifiable link with consumers.
-- **Status:** Day 3 prototype — validation engine now exposes Walrus uploads + Sui digest anchoring behind the new `publish` flag. The legacy Chinese project brief lives in `docs/project-plan.zh.md`.
+OtterProof is a verifiable data quality protocol. It allows data providers to prove their datasets are schema-compliant, complete, and privacy-safe before storing them on Walrus. By generating on-chain attestations on Sui, OtterProof creates a trust layer for decentralized AI and data marketplaces.
 
 ## Key Features
-- **Composable schema templates** — define reusable field constraints, regex guards, and privacy rules powered by JSON Schema + Move definitions.
-- **Streaming validation service** — Fastify/Node pipeline parses large CSV/JSONL files, measures missing/duplicate rates, and flags privacy hits without loading the entire dataset into memory.
-- **Report generator** — outputs deterministic JSON payloads along with visual summaries for the web dashboard.
-- **Walrus & Sui anchoring** — (Day 3) Fastify API can now push reports to Walrus and synthesize Sui digests on demand when clients set the `publish` flag.
-- **Wallet-ready Web UI** — Next.js front-end for uploading data, reviewing scores, and signing on-chain submissions with Sui wallets.
-- **Privacy-aware mode** — optional encrypted payloads (future Seal integration) for sensitive datasets.
+
+*   **Decentralized Validation (Tusk SDK)**: Runs validation logic purely in the browser or client-side, removing the need for centralized backend servers.
+*   **Walrus Integration**: Seamlessly uploads data to Walrus decentralized storage and generates verifiable references (Blob IDs).
+*   **Sui Attestation**: Mints on-chain "Quality Certificates" as Sui Objects, linking the Walrus Blob ID with a cryptographic proof of validation.
+*   **Privacy-First**: Data content is validated locally; only the proofs and metadata are anchored on-chain.
 
 ## Architecture
-```
-┌───────────────┐     Upload & sign     ┌──────────────┐
-│ Next.js Web   │ ─────────────────────▶ │ Fastify API  │
-│ app (apps/web)│ ◀───── Status/Reports  │ validator    │
-└──────┬────────┘                        └────┬─────────┘
-       │ JSON reports / refs                   │ Digest + refs
-       ▼                                       ▼
-┌──────────────┐                       ┌─────────────────┐
-│ Walrus store │ ◀────── report blob ─ │ Sui Move module │
-└──────────────┘                       └─────────────────┘
-```
 
-- **apps/web** — Next.js + Tailwind dashboard with wallet integration and report visualization.
-- **apps/api** — Fastify service handling schema registry, validation jobs, scoring, and Walrus uploads.
-- **packages/move** — Sui Move module that records schema definitions, datasets, and report proofs.
+The project has been optimized into a lean, decentralized architecture:
+
+```mermaid
+graph LR
+    User[User / Data Provider] -->|Uploads Data| Web[Next.js dApp]
+    Web -->|1. Store Blob| Walrus[Walrus Storage]
+    Walrus -->|Blob ID| Web
+    Web -->|2. Validate (Tusk SDK)| Tusk[Local Validation Engine]
+    Tusk -->|3. Build Transaction| Wallet[Sui Wallet]
+    Wallet -->|4. Sign & Mint| Sui[Sui Blockchain]
+```
 
 ## Project Structure
-```
+
+This is a Monorepo managed by `pnpm`:
+
+```bash
 otterproof/
 ├── apps/
-│   ├── web/   # Next.js front-end
-│   └── api/   # Fastify validation service
+│   └── web/           # Next.js dApp (The Playground)
 ├── packages/
-│   └── move/  # Sui Move contracts
-├── docs/      # Documentation (includes legacy Chinese brief)
-├── docker-compose.yml
-├── pnpm-workspace.yaml
-└── package.json
+│   └── tusk-sdk/      # TypeScript SDK for validation & transaction building
+├── package.json
+└── pnpm-workspace.yaml
 ```
 
 ## Getting Started
-### Requirements
-- Node.js >= 18.17 (use `nvm` or `fnm` if needed)
-- pnpm 9.12+ (`corepack enable pnpm` recommended)
-- Sui CLI + Walrus CLI for interacting with dev/test networks (optional during UI/API dev)
+
+### Prerequisites
+*   Node.js >= 18
+*   pnpm
+*   Sui Wallet Browser Extension (configured to **Testnet**)
 
 ### Installation
+
 ```bash
+# Install dependencies
 pnpm install
+
+# Build the SDK
+pnpm build
 ```
 
-### Development
-- Run everything: `pnpm dev` (spawns `apps/*` dev servers in parallel).
-- Web only: `pnpm dev:web` then visit [http://localhost:3000](http://localhost:3000).
-- API only: `pnpm dev:api` (Fastify on port 4000 by default).
-- Docker alternative: `docker-compose up api web` to run both services inside Node 20 containers with shared source mounts.
+### Running the dApp
 
-## Configuration
-Copy `.env.example` to `.env` (root or per service) and adjust:
+Since the architecture is now serverless (client-side only), you only need to start the web application:
 
-| Variable | Description |
-| --- | --- |
-| `NEXT_PUBLIC_API_BASE_URL` | Web app base URL for calling the Fastify API. |
-| `PORT` | API listening port. |
-| `LOG_LEVEL` | Fastify log verbosity (`info`, `debug`, etc.). |
-| `WALRUS_ENDPOINT` | Walrus RPC endpoint for uploading report blobs. |
-| `SUI_RPC` | Sui fullnode endpoint used by the API and CLI scripts. |
+```bash
+# Start the development server
+pnpm dev
+```
 
-## Available Scripts
-Use pnpm from the repo root:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-| Command | Description |
-| --- | --- |
-| `pnpm dev` | Start all workspaces in watch mode. |
-| `pnpm build` | Build every package/app. |
-| `pnpm lint` | Run shared lint rules across the monorepo. |
-| `pnpm test` | Execute workspace tests (Vitest/Jest). |
-| `pnpm typecheck` | Run TypeScript builds for all projects. |
-| `pnpm format` | Apply formatting presets (Prettier/ESLint). |
+## Usage Guide (Playground)
 
-## Roadmap
-Roadmap milestones for the hackathon sprint are tracked in `docs/project-plan.zh.md`. High-level goals:
-1. Stand up monorepo scaffolding and Move contract skeleton.
-2. Ship validation engine with schema registry and scoring.
-3. Integrate Walrus storage + Sui on-chain proofs.
-4. Polish UI/UX with wallet flows and reporting visualizations.
-5. Harden with tests, docs, and demo assets.
+1.  **Connect Wallet**: Click the "Connect Wallet" button and approve the connection in your Sui Wallet.
+2.  **Upload Data**:
+    *   Drag & Drop a CSV or JSONL file.
+    *   Or click **"Use Sample Data"** to load a pre-configured dataset.
+3.  **Validate**: Click **"Upload to Walrus & Validate"**.
+    *   The file will be uploaded to Walrus Testnet.
+    *   The Tusk SDK will validate the data structure against the selected Schema.
+4.  **Attest**:
+    *   Review the generated Quality Report.
+    *   Click **"Sign & Mint Attestation"**.
+    *   Approve the transaction in your wallet.
+5.  **Verify**:
+    *   Once confirmed, you will see a "Notarized" receipt with links to the Sui Explorer.
 
-## Contributing
-Contributions are welcome! Please:
-1. Fork and create a branch (`feat/<name>`).
-2. Run `pnpm lint && pnpm test` before opening a PR.
-3. Describe validation steps and any Walrus/Sui hashes referenced.
+## Tech Stack
+
+*   **Frontend**: Next.js 14, React, Tailwind CSS, Framer Motion
+*   **Blockchain**: @mysten/sui, @mysten/dapp-kit
+*   **Validation**: Ajv (JSON Schema), Tusk SDK (Custom)
+*   **Storage**: Walrus Protocol (HTTP Aggregator/Publisher)
 
 ## License
+
 MIT
-
-## Further Reading
-- Legacy Chinese narrative, architecture notes, and 5-day sprint plan: [`docs/project-plan.zh.md`](docs/project-plan.zh.md)
-- Sui Move language docs: https://docs.sui.io/
-- Walrus storage docs: https://walrus.io/docs
-
-> 🦦 OtterProof — Where data gets smartly verified.
