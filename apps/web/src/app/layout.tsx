@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="zh-CN">
-      <body className="bg-slate-950 text-slate-100">
+      <body className="bg-[var(--background)] text-[var(--foreground)]">
         <Providers>
           <SiteHeader />
           {children}

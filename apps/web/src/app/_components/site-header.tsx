@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ConnectButton } from "@mysten/dapp-kit";
+import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -11,36 +12,63 @@ const navLinks = [
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const [showTicker, setShowTicker] = useState(true);
 
   return (
-    <header className="sticky top-0 z-30 px-4 pb-3 pt-4">
-      <div className="mx-auto w-full max-w-5xl">
-        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-r from-slate-950/80 via-slate-900/80 to-slate-950/80 px-6 py-4 shadow-[0_20px_50px_rgba(2,6,23,0.7)] backdrop-blur-xl">
-          <div className="pointer-events-none absolute inset-0 -z-10 rounded-3xl bg-gradient-to-r from-cyan-400/20 via-emerald-400/10 to-transparent blur-3xl" />
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <Link href="/" className="flex items-center gap-3 text-lg font-semibold text-white">
-              {/* <OtterMark /> */}
-              <span>🦦</span>
-              <span>OtterProof</span>
-            </Link>
-            <nav className="flex flex-1 flex-wrap items-center justify-center gap-3 text-sm text-slate-300 md:justify-center">
-              {navLinks.map((link) => {
-                const isActive = pathname === link.href || (link.href !== "/" && pathname?.startsWith(link.href));
-                return (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={`rounded-full px-4 py-1.5 transition ${
-                      isActive
-                        ? "bg-white/10 text-brand-light shadow-[0_10px_30px_rgba(148,255,239,0.3)]"
-                        : "text-slate-300 hover:text-brand-light"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                );
-              })}
-            </nav>
+    <header className="sticky top-0 z-30 px-4 pb-4 pt-4">
+      <div className="mx-auto w-full max-w-6xl space-y-3">
+        {showTicker && (
+          <div className="flex items-center gap-3 rounded-xl border-2 border-[#0c0b16] bg-[linear-gradient(90deg,#d9f9ff,#f7f3e8,#e2ffb1)] px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16]">
+            <span className="h-2.5 w-2.5 rounded-full bg-[#ff6b6b] ring-2 ring-[#0c0b16]" />
+            Proof-ready · Walrus + Sui · CSV/JSONL
+            <button
+              type="button"
+              onClick={() => setShowTicker(false)}
+              className="ml-auto grid h-6 w-6 place-items-center rounded-lg border-2 border-[#0c0b16] bg-white text-[12px] font-black leading-none shadow-[3px_3px_0_#0c0b16] transition hover:-translate-y-0.5"
+              aria-label="关闭提示"
+            >
+              ✕
+            </button>
+          </div>
+        )}
+        <div className="relative flex flex-wrap items-center justify-between gap-3 rounded-3xl border-2 border-[#0c0b16] bg-white px-5 py-4 shadow-[10px_10px_0_#0c0b16]">
+          <div className="absolute -right-6 -top-4 rotate-2 rounded-full border-2 border-[#0c0b16] bg-[#ffe76b] px-3 py-1 text-[11px] font-bold uppercase shadow-[4px_4px_0_#0c0b16]">
+            Beta
+          </div>
+          <Link href="/" className="flex items-center gap-3 text-lg font-black tracking-tight text-[#0c0b16]">
+            <span className="grid h-10 w-10 place-items-center rounded-2xl border-2 border-[#0c0b16] bg-[#7ef5dc] text-2xl shadow-[4px_4px_0_#0c0b16]">
+              🦦
+            </span>
+            <span className="leading-none">
+              OtterProof
+              <span className="ml-2 inline-flex rounded-full border border-[#0c0b16] bg-[#d9f9ff] px-2 py-[3px] text-[10px] font-semibold uppercase tracking-[0.24em] align-middle shadow-[3px_3px_0_#0c0b16]">
+                Data Proofs
+              </span>
+            </span>
+          </Link>
+          <nav className="flex flex-1 flex-wrap items-center justify-center gap-2 text-sm font-semibold md:justify-center">
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href || (link.href !== "/" && pathname?.startsWith(link.href));
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`flex items-center gap-2 rounded-full border-2 border-[#0c0b16] px-4 py-2 uppercase tracking-[0.16em] shadow-[4px_4px_0_#0c0b16] transition ${
+                    isActive ? "bg-[#7ef5dc] text-[#0c0b16]" : "bg-white text-[#0c0b16] hover:bg-[#ffe76b]"
+                  }`}
+                >
+                  <span className="grid h-4 w-4 place-items-center rounded-[6px] border border-[#0c0b16] bg-white text-[10px]">
+                    {isActive ? "■" : "□"}
+                  </span>
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
+          <div className="flex items-center gap-3 rounded-2xl border-2 border-[#0c0b16] bg-[#0c0b16] px-3 py-2 text-white shadow-[5px_5px_0_#0c0b16]">
+            <span className="rounded-full bg-[#7ef5dc] px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0c0b16]">
+              Connect
+            </span>
             <ConnectButton />
           </div>
         </div>

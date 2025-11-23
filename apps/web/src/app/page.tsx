@@ -4,37 +4,39 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const heroStats = [
-  { label: "Real-time", value: "CSV + JSONL" },
-  { label: "Walrus Ref", value: "Auto-gen" },
-  { label: "Sui Sign", value: "Demo Wallet" }
+  { label: "Formats", value: "CSV + JSONL", accent: "bg-[#ffe76b]" },
+  { label: "Walrus Ref", value: "Auto-generated", accent: "bg-[#7ef5dc]" },
+  { label: "Sui Sign", value: "Demo wallet ready", accent: "bg-[#c4b5ff]" }
 ];
 
-const productPillars = [
-  "Drag & Drop upload for CSV / JSONL with auto-schema matching",
-  "Unified dashboard for Scorecards, Metrics, and Walrus/Sui receipts",
-  "Connect wallet to sign & mint attestations in one flow"
+const featureHighlights = [
+  "Drag & drop data. Schema snapped. No fragile manual mapping.",
+  "Scorecards, metrics, receipts, and signatures live in one loud dashboard.",
+  "Walrus storage + Sui signing bundled as a single proof-first workflow."
 ];
 
 const modules = [
   {
-    title: "Upload Data",
-    description: "Drag CSV/JSONL files. System automatically identifies structure and matches schema."
+    title: "Upload → Lock schema",
+    description: "Drop CSV/JSONL, inspect columns instantly, and freeze the structure before any attestation."
   },
   {
-    title: "Real-time Validation",
-    description: "Tusk Engine streams analysis for missing rates, duplicates, and privacy risks."
+    title: "Real-time scoring",
+    description: "Tusk Engine streams missing rates, dupes, types, and privacy hits with pixel-grid visuals."
   },
   {
-    title: "On-chain Attestation",
-    description: "Generate Walrus receipts + Sui digests. Sign directly with your wallet."
+    title: "Attest + Sign",
+    description: "Mint Walrus receipts, surface Sui digests, and sign straight from the Playground."
   }
 ];
 
 const workflowHighlights = [
-  "File upload & format recognition integrated in Playground",
-  "Unified view for Scorecards, Metrics, and Receipts",
+  "File recognition + schema hinting lives inside the Playground panel",
+  "Single screen for Scorecards, Metrics, and Walrus receipts",
   "Sign digests directly to simulate on-chain confirmation"
 ];
+
+const badgeTicker = ["Proof-first mindset", "Neo-brutal interface", "Walrus + Sui native", "Privacy hits blocked"];
 
 const heroContainer = {
   hidden: {},
@@ -58,77 +60,104 @@ const sectionVariants = {
 
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 px-6 pb-16 pt-28 text-slate-100">
-      <div className="pointer-events-none absolute -left-10 top-12 h-60 w-60 rounded-full bg-cyan-500/30 blur-3xl" />
-      <div className="pointer-events-none absolute right-0 top-1/3 h-72 w-72 rounded-full bg-emerald-500/20 blur-3xl" />
-      <section className="relative mx-auto flex w-full max-w-5xl flex-col gap-12">
+    <main className="relative min-h-screen overflow-hidden bg-[var(--background)] px-6 pb-20 pt-10 text-[#0c0b16]">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(126,245,220,0.35),transparent_30%),radial-gradient(circle_at_80%_10%,rgba(255,231,107,0.45),transparent_25%),radial-gradient(circle_at_70%_60%,rgba(196,181,255,0.35),transparent_28%)]" />
+      <div className="pointer-events-none absolute inset-0 -z-20 bg-[linear-gradient(180deg,rgba(12,11,22,0.05),transparent_40%,rgba(12,11,22,0.08))]" />
+      <section className="relative mx-auto flex w-full max-w-6xl flex-col gap-12">
         <motion.header
-          className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_420px]"
+          className="grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr]"
           variants={heroContainer}
           initial="hidden"
           animate="visible"
         >
-          <motion.div className="space-y-6 text-left" variants={fadeInUp}>
+          <motion.div className="space-y-7 text-left" variants={fadeInUp}>
             <motion.span
               variants={fadeInUp}
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.4em] text-brand-light"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#d9f9ff] px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] shadow-[6px_6px_0_#0c0b16]"
             >
-              Data Validation Layer · Sui + Walrus
+              Neo-Brutal Data Proofs
+              <span className="h-2 w-2 rounded-full bg-[#ff6b6b] ring-2 ring-[#0c0b16]" />
             </motion.span>
-            <motion.h1 variants={fadeInUp} className="text-4xl font-semibold leading-tight md:text-5xl">
-              OtterProof — The First Line of Defense for On-Chain Data
+            <motion.h1
+              variants={fadeInUp}
+              className="text-4xl font-black leading-[1.05] tracking-tight md:text-5xl lg:text-6xl"
+            >
+              为 AI 市场
+              <br />
+              输出可信的 <span className="underline decoration-[12px] decoration-[#ffe76b]">数据证明</span>
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-base text-slate-300 md:text-lg">
-              Upload, Validate, Store on Walrus, and Sign with Sui — all in one Playground. Helping data markets and AI teams prove data quality and trust.
+            <motion.p variants={fadeInUp} className="max-w-2xl text-lg leading-relaxed text-[#1f2937] md:text-xl">
+              Upload CSV/JSONL, auto-score quality, anchor receipts on Walrus, and sign with Sui — all inside a playful,
+              high-contrast Playground built for teams shipping data markets.
             </motion.p>
+            <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
+              <Link
+                href="/playground"
+                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#0c0b16] px-7 py-3 text-sm font-bold uppercase tracking-[0.24em] text-white shadow-[8px_8px_0_#0c0b16] transition hover:-translate-y-1 hover:shadow-[12px_12px_0_#0c0b16]"
+              >
+                Launch Playground
+              </Link>
+              <a
+                href="#workflow"
+                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#ffe76b] px-6 py-3 text-sm font-bold uppercase tracking-[0.2em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] transition hover:-translate-y-1"
+              >
+                查看流程 →
+              </a>
+            </motion.div>
             <motion.div variants={fadeInUp} className="grid gap-3 sm:grid-cols-3">
               {heroStats.map((stat, index) => (
                 <motion.div
                   key={stat.label}
-                  className="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-center shadow-inner shadow-white/10"
+                  className={`rounded-2xl border-2 border-[#0c0b16] ${stat.accent} px-4 py-4 text-left shadow-[8px_8px_0_#0c0b16]`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 + index * 0.1, duration: 0.5, ease: "easeOut" }}
                 >
-                  <p className="text-2xl font-bold text-brand-light">{stat.value}</p>
-                  <p className="text-xs uppercase tracking-[0.4em] text-slate-400">{stat.label}</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.3em]">{stat.label}</p>
+                  <p className="mt-2 text-2xl font-black leading-tight text-[#0c0b16]">{stat.value}</p>
                 </motion.div>
               ))}
             </motion.div>
-            <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
-              <Link
-                href="/playground"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-light px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-900 shadow-[0_20px_45px_rgba(148,255,239,0.35)] transition hover:bg-brand-light/90"
-              >
-                Try Playground
-              </Link>
-              <a
-                href="#workflow"
-                className="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-slate-200 hover:border-brand-light/60"
-              >
-                How it works &rarr;
-              </a>
-            </motion.div>
+            <div className="flex flex-wrap items-center gap-2 rounded-2xl border-2 border-dashed border-[#0c0b16] bg-white/80 px-4 py-3 text-xs font-semibold uppercase tracking-[0.22em] shadow-[6px_6px_0_#0c0b16]">
+              {badgeTicker.map((item) => (
+                <span
+                  key={item}
+                  className="flex items-center gap-2 rounded-full border border-[#0c0b16] bg-[#f7f3e8] px-3 py-[6px] text-[#0c0b16]"
+                >
+                  <span className="grid h-2.5 w-2.5 place-items-center rounded-full bg-[#7ef5dc] border border-[#0c0b16]" />
+                  {item}
+                </span>
+              ))}
+            </div>
           </motion.div>
-          <HeroReportPreview />
+          <HeroStickerBoard />
         </motion.header>
 
         <motion.section
-          className="grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_20px_50px_rgba(2,6,23,0.6)] md:grid-cols-2"
+          className="grid gap-6 rounded-3xl border-2 border-[#0c0b16] bg-white p-6 shadow-[12px_12px_0_#0c0b16] lg:grid-cols-[1fr_1.1fr]"
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <div>
-            <h2 className="text-2xl font-semibold">Product Highlights</h2>
-            <p className="mt-2 text-sm text-slate-300">A complete closed-loop experience: Validate &rarr; Attest &rarr; Sign.</p>
+          <div className="space-y-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#0c0b16]">Product Highlights</p>
+            <h2 className="text-3xl font-black leading-tight text-[#0c0b16]">Loud, playful, but strict on data.</h2>
+            <p className="text-sm text-[#1f2937]">
+              Every card carries a thick outline because every step is auditable. Upload → Validate → Attest → Sign,
+              without leaving the Playground.
+            </p>
           </div>
-          <ul className="space-y-3 text-sm text-slate-200">
-            {productPillars.map((item) => (
-              <li key={item} className="flex items-center gap-2">
-                <span className="text-brand-light">◆</span>
+          <ul className="space-y-4 text-sm text-[#0c0b16]">
+            {featureHighlights.map((item) => (
+              <li
+                key={item}
+                className="flex items-start gap-3 rounded-2xl border-2 border-[#0c0b16] bg-[#d9f9ff] px-4 py-3 font-semibold leading-relaxed shadow-[8px_8px_0_#0c0b16]"
+              >
+                <span className="mt-1 grid h-5 w-5 place-items-center rounded-md border border-[#0c0b16] bg-white text-[12px] font-black">
+                  ☑
+                </span>
                 <span>{item}</span>
               </li>
             ))}
@@ -137,7 +166,7 @@ export default function HomePage() {
 
         <motion.section
           id="workflow"
-          className="rounded-3xl border border-white/10 bg-slate-950/50 p-6 shadow-[0_20px_50px_rgba(2,6,23,0.6)]"
+          className="rounded-3xl border-2 border-[#0c0b16] bg-[#0c0b16] p-6 text-white shadow-[12px_12px_0_#0c0b16]"
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
@@ -146,32 +175,41 @@ export default function HomePage() {
         >
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div>
-              <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Workflow</p>
-              <h3 className="text-2xl font-semibold">Core Process · Verify before on-chain in 3 steps</h3>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#7ef5dc]">Workflow</p>
+              <h3 className="mt-2 text-3xl font-black leading-tight text-[#ffe76b]">验证 → 存储 → 签名</h3>
+              <p className="mt-2 max-w-2xl text-sm text-slate-200">
+                Built to feel like a sticker sheet but wired for rigorous data control. Follow the steps, ship proofs.
+              </p>
             </div>
-            <Link href="/playground" className="text-sm text-brand-light hover:underline">
-              Enter Playground &rarr;
+            <Link
+              href="/playground"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-white px-4 py-2 text-sm font-bold uppercase tracking-[0.2em] text-[#0c0b16] shadow-[6px_6px_0_#7ef5dc]"
+            >
+              Enter Playground ↗
             </Link>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {modules.map((module, index) => (
               <motion.div
                 key={module.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-5"
+                className="relative rounded-2xl border-2 border-white/70 bg-white/10 p-5 shadow-[8px_8px_0_rgba(255,255,255,0.2)]"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
               >
-                <p className="text-sm font-semibold text-brand-light">{module.title}</p>
-                <p className="mt-2 text-sm text-slate-300">{module.description}</p>
+                <span className="absolute -left-3 -top-3 grid h-8 w-8 place-items-center rounded-full border-2 border-[#0c0b16] bg-[#ffe76b] text-base font-black text-[#0c0b16] shadow-[5px_5px_0_#0c0b16]">
+                  {index + 1}
+                </span>
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-[#7ef5dc]">{module.title}</p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-100">{module.description}</p>
               </motion.div>
             ))}
           </div>
         </motion.section>
 
         <motion.section
-          className="rounded-3xl border border-white/10 bg-slate-950/50 p-6 shadow-[0_20px_50px_rgba(2,6,23,0.6)]"
+          className="rounded-3xl border-2 border-[#0c0b16] bg-white p-6 shadow-[12px_12px_0_#0c0b16]"
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
@@ -179,31 +217,47 @@ export default function HomePage() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="grid gap-6 md:grid-cols-2">
-            <div>
-              <p className="text-sm uppercase tracking-[0.4em] text-brand-light">Capabilities</p>
-              <h2 className="mt-2 text-2xl font-semibold">Upload · Report · Sign Integrated</h2>
-              <ul className="mt-4 space-y-3 text-sm text-slate-200">
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#0c0b16]">Capabilities</p>
+              <h2 className="text-3xl font-black leading-tight text-[#0c0b16]">Upload · Report · Sign，一张桌面完成</h2>
+              <ul className="space-y-3 text-sm text-[#0c0b16]">
                 {workflowHighlights.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 text-brand-light">◆</span>
+                  <li
+                    key={item}
+                    className="flex items-start gap-3 rounded-2xl border-2 border-[#0c0b16] bg-[#c4b5ff]/40 px-4 py-3 font-semibold leading-relaxed shadow-[8px_8px_0_#0c0b16]"
+                  >
+                    <span className="mt-1 text-lg font-black text-[#0c0b16]">✱</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm text-slate-400">
-                The Playground connects Tusk API with Walrus / Sui attestation: Upload File &rarr; Score Data &rarr; View Receipt &rarr; Sign with Wallet.
+              <p className="text-sm text-[#1f2937]">
+                Playground 把 Tusk API、Walrus 存储以及 Sui 签名塞进同一流中。上传文件 → 评分 → 查看 Walrus 引用 →
+                用钱包签名，整个链路一次完成。
               </p>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-slate-300">
-              <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Scoring Model (v0)</p>
-              <ul className="mt-3 space-y-2">
-                <li>· Missing Rate 45% Weight — Direct warning for required fields</li>
-                <li>· Type Error 35% Weight — Enforce numeric/bool/date formats</li>
-                <li>· Duplication 20% Weight — Penalize key collisions</li>
-                <li>· Privacy Hits 3 pts/item — Phone/Email/ID blocks attestation</li>
+            <div className="relative space-y-4 rounded-2xl border-2 border-[#0c0b16] bg-[#f7f3e8] p-5 shadow-[10px_10px_0_#0c0b16]">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#0c0b16]">Scoring Model (v0)</p>
+              <ul className="space-y-2 text-sm text-[#0c0b16]">
+                <li className="flex items-center gap-2 font-semibold">
+                  <span className="grid h-3 w-3 place-items-center rounded-[6px] border border-[#0c0b16] bg-[#ffe76b]" />
+                  Missing Rate 45% — required fields trigger direct warnings
+                </li>
+                <li className="flex items-center gap-2 font-semibold">
+                  <span className="grid h-3 w-3 place-items-center rounded-[6px] border border-[#0c0b16] bg-[#7ef5dc]" />
+                  Type Error 35% — enforce numeric / bool / date formats
+                </li>
+                <li className="flex items-center gap-2 font-semibold">
+                  <span className="grid h-3 w-3 place-items-center rounded-[6px] border border-[#0c0b16] bg-[#c4b5ff]" />
+                  Duplication 20% — penalize primary-key collisions
+                </li>
+                <li className="flex items-center gap-2 font-semibold">
+                  <span className="grid h-3 w-3 place-items-center rounded-[6px] border border-[#0c0b16] bg-[#ffb4d3]" />
+                  Privacy Hits 3 pts/item — phone / email / ID block attestation
+                </li>
               </ul>
-              <p className="mt-3 text-xs text-slate-500">
-                Score &ge; 70 with no privacy hits required for attestation.
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#0c0b16]">
+                Score ≥ 70 且无隐私命中方可出链。
               </p>
             </div>
           </div>
@@ -213,12 +267,12 @@ export default function HomePage() {
   );
 }
 
-function HeroReportPreview() {
+function HeroStickerBoard() {
   const previewMetrics = [
-    { label: "Missing", value: "1.2%" },
-    { label: "Type Err", value: "0.8%" },
-    { label: "Dup Rate", value: "0.3%" },
-    { label: "Privacy", value: "0 Hits" }
+    { label: "Missing", value: "1.2%", tone: "bg-[#ffe76b]" },
+    { label: "Type Err", value: "0.8%", tone: "bg-[#7ef5dc]" },
+    { label: "Dup Rate", value: "0.3%", tone: "bg-[#c4b5ff]" },
+    { label: "Privacy", value: "0 Hits", tone: "bg-[#ffb4d3]" }
   ];
 
   return (
@@ -228,38 +282,45 @@ function HeroReportPreview() {
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.7, delay: 0.35, ease: "easeOut" }}
     >
-      <div className="pointer-events-none absolute -inset-4 -z-10 rounded-[32px] bg-gradient-to-br from-cyan-400/30 via-emerald-400/20 to-transparent blur-3xl" />
-      <div className="relative space-y-5 rounded-[32px] border border-white/15 bg-slate-950/70 p-6 shadow-[0_20px_60px_rgba(2,6,23,0.8)] backdrop-blur-2xl">
-        <motion.div className="flex items-center justify-between" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.45 }}>
+      <div className="absolute -left-8 -top-8 rotate-[-4deg] rounded-2xl border-2 border-[#0c0b16] bg-[#ffe76b] px-4 py-2 text-xs font-black uppercase tracking-[0.3em] text-[#0c0b16] shadow-[8px_8px_0_#0c0b16]">
+        Walrus Ready
+      </div>
+      <div className="absolute -right-6 top-20 rotate-3 rounded-xl border-2 border-[#0c0b16] bg-[#7ef5dc] px-3 py-1 text-[11px] font-black uppercase tracking-[0.3em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16]">
+        Live score
+      </div>
+      <div className="relative space-y-5 rounded-[30px] border-2 border-[#0c0b16] bg-white p-6 shadow-[14px_14px_0_#0c0b16]">
+        <div className="flex items-center justify-between">
           <div>
-            <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Walrus Report</p>
-            <p className="text-lg font-semibold text-white">news_comments_demo</p>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[#0c0b16]/80">Walrus Report</p>
+            <p className="text-lg font-black text-[#0c0b16]">news_comments_demo</p>
           </div>
-          <span className="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-200">Score 92</span>
-        </motion.div>
-        <div className="grid grid-cols-2 gap-3 text-sm text-slate-300">
+          <span className="rounded-full border-2 border-[#0c0b16] bg-[#7ef5dc] px-3 py-1 text-xs font-black uppercase tracking-[0.24em] text-[#0c0b16] shadow-[4px_4px_0_#0c0b16]">
+            Score 92
+          </span>
+        </div>
+        <div className="grid grid-cols-2 gap-3 text-sm text-[#0c0b16]">
           {previewMetrics.map((metric, index) => (
             <motion.div
               key={metric.label}
-              className="rounded-2xl border border-white/10 bg-white/5 px-3 py-3"
+              className={`rounded-2xl border-2 border-[#0c0b16] ${metric.tone} px-4 py-3 shadow-[6px_6px_0_#0c0b16]`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 + index * 0.08, duration: 0.45, ease: "easeOut" }}
             >
-              <p className="text-[10px] uppercase tracking-[0.4em] text-slate-500">{metric.label}</p>
-              <p className="text-lg font-semibold text-white">{metric.value}</p>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#0c0b16]">{metric.label}</p>
+              <p className="mt-1 text-lg font-black text-[#0c0b16]">{metric.value}</p>
             </motion.div>
           ))}
         </div>
         <motion.div
-          className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-slate-300"
+          className="rounded-2xl border-2 border-[#0c0b16] bg-[#f7f3e8] p-4 text-xs text-[#0c0b16] shadow-[8px_8px_0_#0c0b16]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.65, duration: 0.45, ease: "easeOut" }}
         >
-          <p className="uppercase tracking-[0.4em] text-slate-500">On-Chain Ref</p>
-          <p className="mt-2 font-mono text-sm text-brand-light">walrus://0x94af...dd10</p>
-          <p className="text-xs text-slate-400">Sui Digest · 0xd4e9...71c3</p>
+          <p className="font-semibold uppercase tracking-[0.3em] text-[#0c0b16]">On-Chain Ref</p>
+          <p className="mt-2 font-mono text-sm text-[#0c0b16]">walrus://0x94af...dd10</p>
+          <p className="text-xs text-[#0c0b16]/70">Sui Digest · 0xd4e9...71c3</p>
         </motion.div>
         <HeroWalletChip />
       </div>
@@ -270,18 +331,22 @@ function HeroReportPreview() {
 function HeroWalletChip() {
   return (
     <motion.div
-      className="relative -mb-2 flex items-center gap-3 rounded-2xl border border-white/10 bg-gradient-to-r from-slate-900/90 to-slate-900/50 px-4 py-3 text-xs text-slate-200 shadow-[0_10px_30px_rgba(2,6,23,0.7)]"
+      className="relative -mb-2 flex items-center gap-3 rounded-2xl border-2 border-[#0c0b16] bg-[#0c0b16] px-4 py-3 text-xs text-white shadow-[10px_10px_0_#0c0b16]"
       initial={{ opacity: 0, y: 15 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.85, duration: 0.45, ease: "easeOut" }}
       whileHover={{ scale: 1.02 }}
     >
-      <div className="h-8 w-8 rounded-full bg-brand-light/30" />
-      <div>
-        <p className="text-[10px] uppercase tracking-[0.4em] text-slate-500">Demo Wallet</p>
-        <p className="font-mono text-sm text-white">0x8a4c…f207</p>
+      <div className="grid h-9 w-9 place-items-center rounded-xl border-2 border-white bg-[#7ef5dc] text-lg font-black text-[#0c0b16]">
+        ₿
       </div>
-      <span className="ml-auto rounded-full bg-brand-light/20 px-3 py-1 text-[10px] uppercase tracking-[0.4em] text-brand-light">Ready</span>
+      <div>
+        <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#7ef5dc]">Demo Wallet</p>
+        <p className="font-mono text-sm font-semibold text-white">0x8a4c…f207</p>
+      </div>
+      <span className="ml-auto rounded-full border-2 border-white bg-white px-3 py-1 text-[10px] font-black uppercase tracking-[0.3em] text-[#0c0b16] shadow-[4px_4px_0_#7ef5dc]">
+        Ready
+      </span>
     </motion.div>
   );
 }

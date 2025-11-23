@@ -305,20 +305,24 @@ export function ValidationPlayground() {
   const selectedSchema = DEMO_SCHEMAS.find(s => s.id === form.schemaId);
 
   return (
-    <div className="rounded-3xl border border-slate-800/70 bg-slate-900/40 p-6 shadow-2xl shadow-slate-950/60">
+    <div className="relative overflow-hidden rounded-3xl border-2 border-[#0c0b16] bg-white/95 p-6 shadow-[12px_12px_0_#0c0b16]">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_20%,rgba(255,231,107,0.25),transparent_30%),radial-gradient(circle_at_85%_10%,rgba(126,245,220,0.25),transparent_25%)]" />
         {/* Header */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
             <div>
-                <p className="text-xs uppercase tracking-[0.4em] text-brand-light/80">Playground</p>
-                <h2 className="text-2xl font-semibold">Validation Engine · Tusk SDK</h2>
-                <p className="text-sm text-slate-400">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#0c0b16]">Playground</p>
+                <h2 className="text-3xl font-black leading-tight text-[#0c0b16]">Validation Engine · Tusk SDK</h2>
+                <p className="text-sm text-[#1f2937]">
                     Upload &rarr; Walrus Storage &rarr; Tusk Validate &rarr; Sui Attest
                 </p>
             </div>
             <button
                 onClick={() => updateForm({ content: SAMPLE_DATA[form.format] })}
-                className="rounded-full border border-brand-light px-4 py-2 text-sm text-brand-light hover:bg-brand-light/10"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#7ef5dc] px-4 py-2 text-sm font-bold uppercase tracking-[0.16em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] transition hover:-translate-y-0.5"
             >
+                <span className="grid h-4 w-4 place-items-center rounded-[6px] border border-[#0c0b16] bg-white text-[10px]">
+                    ☑
+                </span>
                 Use Sample Data
             </button>
         </div>
@@ -327,18 +331,18 @@ export function ValidationPlayground() {
             {/* Left Column: Input Form */}
             <form onSubmit={runValidation} className="space-y-4">
                 <div>
-                    <label className="text-sm text-slate-400">Dataset Name</label>
+                    <label className="text-sm font-semibold text-[#0c0b16] uppercase tracking-[0.14em]">Dataset Name</label>
                     <input 
-                        className="mt-1 w-full rounded-2xl border border-slate-800 bg-slate-950/40 px-4 py-2 text-sm text-slate-100 focus:border-brand-light focus:outline-none"
+                        className="mt-2 w-full rounded-2xl border-2 border-[#0c0b16] bg-[#f7f3e8] px-4 py-3 text-sm font-semibold text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] focus:border-[#0c0b16] focus:outline-none"
                         value={form.datasetName}
                         onChange={e => updateForm({ datasetName: e.target.value })}
                     />
                 </div>
 
                 <div>
-                    <label className="text-sm text-slate-400">Schema</label>
+                    <label className="text-sm font-semibold text-[#0c0b16] uppercase tracking-[0.14em]">Schema</label>
                     <select 
-                        className="mt-1 w-full rounded-2xl border border-slate-800 bg-slate-950/40 px-4 py-2 text-sm text-slate-100 focus:border-brand-light focus:outline-none"
+                        className="mt-2 w-full rounded-2xl border-2 border-[#0c0b16] bg-[#f7f3e8] px-4 py-3 text-sm font-semibold text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] focus:border-[#0c0b16] focus:outline-none"
                         value={form.schemaId}
                         onChange={e => updateForm({ schemaId: e.target.value })}
                     >
@@ -356,16 +360,16 @@ export function ValidationPlayground() {
                 />
 
                 <div>
-                    <label className="text-sm text-slate-400">Data Preview</label>
+                    <label className="text-sm font-semibold text-[#0c0b16] uppercase tracking-[0.14em]">Data Preview</label>
                     <textarea 
-                        className="mt-1 h-56 w-full rounded-2xl border border-slate-800 bg-slate-950/40 px-4 py-2 text-sm text-slate-100 focus:border-brand-light focus:outline-none font-mono"
+                        className="mt-2 h-56 w-full rounded-2xl border-2 border-[#0c0b16] bg-[#f7f3e8] px-4 py-3 text-sm font-mono font-semibold text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] focus:border-[#0c0b16] focus:outline-none"
                         value={form.content}
                         onChange={e => updateForm({ content: e.target.value })}
                     />
                 </div>
 
                 {error && (
-                    <div className="rounded-2xl border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                    <div className="rounded-2xl border-2 border-[#0c0b16] bg-[#ffb4d3] px-4 py-3 text-sm font-bold text-[#0c0b16] shadow-[6px_6px_0_#0c0b16]">
                         {error}
                     </div>
                 )}
@@ -373,7 +377,7 @@ export function ValidationPlayground() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full rounded-2xl bg-brand-light/80 px-4 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-950 transition hover:bg-brand-light disabled:cursor-not-allowed disabled:opacity-60"
+                    className="w-full rounded-2xl border-2 border-[#0c0b16] bg-[#0c0b16] px-4 py-3 text-sm font-black uppercase tracking-[0.22em] text-white shadow-[10px_10px_0_#0c0b16] transition hover:-translate-y-1 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                     {loading ? "Processing..." : "Upload to Walrus & Validate"}
                 </button>
@@ -382,14 +386,14 @@ export function ValidationPlayground() {
             {/* Right Column: Results & Wallet */}
             <div className="space-y-4">
                 {/* Schema Info */}
-                <section className="rounded-3xl border border-slate-800/70 bg-slate-950/30 p-4">
-                    <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Schema</p>
-                    <h3 className="text-lg font-semibold text-slate-100">{selectedSchema?.title}</h3>
-                    <div className="mt-2 space-y-1">
+                <section className="rounded-3xl border-2 border-[#0c0b16] bg-[#f7f3e8] p-5 shadow-[8px_8px_0_#0c0b16]">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#0c0b16]">Schema</p>
+                    <h3 className="text-xl font-black text-[#0c0b16]">{selectedSchema?.title}</h3>
+                    <div className="mt-3 space-y-2">
                         {selectedSchema?.fields.map(f => (
-                            <div key={f.name} className="flex justify-between text-xs text-slate-400 border-b border-slate-800/50 pb-1">
-                                <span>{f.name}</span>
-                                <span className="uppercase">{f.type}</span>
+                            <div key={f.name} className="flex items-center justify-between rounded-xl border-2 border-dashed border-[#0c0b16]/60 bg-white px-3 py-2 text-xs font-semibold text-[#0c0b16] shadow-[4px_4px_0_#0c0b16]">
+                                <span className="uppercase tracking-wide">{f.name}</span>
+                                <span className="rounded-full border border-[#0c0b16] bg-[#d9f9ff] px-2 py-[3px] uppercase">{f.type}</span>
                             </div>
                         ))}
                     </div>
@@ -397,13 +401,13 @@ export function ValidationPlayground() {
 
                 {/* Validation Report */}
                 {report && (
-                    <section className="rounded-3xl border border-slate-800/70 bg-slate-950/30 p-4 space-y-4">
+                    <section className="space-y-4 rounded-3xl border-2 border-[#0c0b16] bg-[#0c0b16] p-5 text-white shadow-[10px_10px_0_#0c0b16]">
                          <div className="flex items-center justify-between">
                             <div>
-                                <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Quality Score</p>
-                                <p className="text-4xl font-bold text-brand-light">{report.score}</p>
+                                <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#7ef5dc]">Quality Score</p>
+                                <p className="text-4xl font-black text-[#ffe76b]">{report.score}</p>
                             </div>
-                            <div className={`px-3 py-1 rounded-full text-xs font-semibold ${report.passed ? "bg-emerald-500/20 text-emerald-200" : "bg-red-500/20 text-red-200"}`}>
+                            <div className={`rounded-full border-2 px-3 py-1 text-xs font-black uppercase tracking-[0.2em] shadow-[4px_4px_0_#7ef5dc] ${report.passed ? "border-[#7ef5dc] bg-white text-[#0c0b16]" : "border-[#ff6b6b] bg-[#ff6b6b] text-[#0c0b16]"}`}>
                                 {report.passed ? "PASSED" : "FAILED"}
                             </div>
                         </div>
@@ -414,9 +418,9 @@ export function ValidationPlayground() {
                         </div>
 
                         {/* Wallet Action */}
-                        <div className="rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4">
-                            <div className="flex justify-between items-center mb-4">
-                                <p className="text-xs uppercase tracking-[0.4em] text-slate-500">Attestation</p>
+                        <div className="rounded-2xl border-2 border-white/70 bg-white/10 p-4 shadow-[6px_6px_0_rgba(255,255,255,0.35)]">
+                            <div className="mb-4 flex items-center justify-between">
+                                <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#7ef5dc]">Attestation</p>
                                 <ConnectButton />
                             </div>
 
@@ -424,28 +428,28 @@ export function ValidationPlayground() {
                                 attestationTx ? (
                                     <button 
                                         onClick={handleSign}
-                                        className="w-full rounded-xl bg-emerald-500/20 border border-emerald-500/50 py-2 text-emerald-300 hover:bg-emerald-500/30 transition"
+                                        className="w-full rounded-xl border-2 border-[#7ef5dc] bg-[#7ef5dc] py-2 text-sm font-black uppercase tracking-[0.18em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] transition hover:-translate-y-0.5"
                                     >
                                         Sign & Mint Attestation
                                     </button>
                                 ) : (
-                                    <p className="text-xs text-slate-400">Generate a valid report to enable signing.</p>
+                                    <p className="text-xs text-white/80">Generate a valid report to enable signing.</p>
                                 )
                             ) : (
-                                <p className="text-xs text-slate-400">Connect wallet to sign attestation.</p>
+                                <p className="text-xs text-white/80">Connect wallet to sign attestation.</p>
                             )}
                         </div>
 
                         {/* Receipt */}
                         {receipt && (
-                            <div className="rounded-2xl border border-emerald-500/30 bg-emerald-900/10 p-4 space-y-2">
-                                <p className="text-sm font-semibold text-emerald-400">✅ Notarized on Walrus + Sui</p>
+                            <div className="space-y-2 rounded-2xl border-2 border-[#7ef5dc] bg-white px-4 py-4 text-[#0c0b16] shadow-[8px_8px_0_#0c0b16]">
+                                <p className="text-sm font-black uppercase tracking-[0.18em]">✅ Notarized on Walrus + Sui</p>
                                 <DetailLine label="Walrus ID" value={receipt.walrus.reference} />
                                 <DetailLine label="Sui Digest" value={receipt.sui.digest} />
                                 <a 
                                     href={`https://suiscan.xyz/testnet/tx/${receipt.sui.digest}`} 
                                     target="_blank" 
-                                    className="text-xs text-emerald-400 hover:underline"
+                                    className="text-xs font-semibold text-[#0c0b16] underline"
                                 >
                                     View on Explorer &rarr;
                                 </a>
@@ -463,18 +467,18 @@ export function ValidationPlayground() {
 
 function MetricTile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-slate-800/70 bg-slate-900/40 px-3 py-2">
-      <p className="text-[11px] uppercase tracking-[0.3em] text-slate-500">{label}</p>
-      <p className="text-lg font-semibold text-slate-100">{value}</p>
+    <div className="rounded-2xl border-2 border-white/80 bg-white/10 px-3 py-2 shadow-[5px_5px_0_rgba(255,255,255,0.3)]">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#7ef5dc]">{label}</p>
+      <p className="text-lg font-black text-white">{value}</p>
     </div>
   );
 }
 
 function DetailLine({ label, value, mono = true }: { label: string; value: string; mono?: boolean }) {
     return (
-        <div className="flex flex-col text-xs mt-2">
-            <span className="text-slate-500 uppercase tracking-wider text-[10px]">{label}</span>
-            <span className={`text-slate-300 truncate ${mono ? 'font-mono' : ''}`} title={value}>{value}</span>
+        <div className="mt-2 flex flex-col text-xs text-[#0c0b16]">
+            <span className="text-[10px] font-semibold uppercase tracking-wider">{label}</span>
+            <span className={`truncate text-sm ${mono ? 'font-mono font-semibold' : 'font-semibold'}`} title={value}>{value}</span>
         </div>
     );
 }
@@ -482,16 +486,16 @@ function DetailLine({ label, value, mono = true }: { label: string; value: strin
 function UploadDropzone({ format, uploading, uploadInfo, onFileSelected }: any) {
     // Simplified for brevity
     return (
-        <div className="border border-dashed border-slate-700 rounded-2xl p-6 text-center hover:border-brand-light/50 transition cursor-pointer relative">
+        <div className="relative cursor-pointer rounded-2xl border-2 border-dashed border-[#0c0b16] bg-[#d9f9ff] p-6 text-center shadow-[8px_8px_0_#0c0b16] transition hover:-translate-y-0.5">
              <input 
                 type="file" 
                 className="absolute inset-0 opacity-0 cursor-pointer"
                 onChange={(e) => e.target.files?.[0] && onFileSelected(e.target.files[0])}
             />
-            <p className="text-slate-400 text-sm">
+            <p className="text-sm font-semibold text-[#0c0b16] uppercase tracking-[0.16em]">
                 {uploading ? "Reading..." : "Drop file here or click to upload"}
             </p>
-             {uploadInfo && <p className="text-xs text-brand-light mt-2">{uploadInfo.fileName}</p>}
+             {uploadInfo && <p className="mt-2 text-xs font-black uppercase tracking-[0.2em] text-[#0c0b16]">{uploadInfo.fileName}</p>}
         </div>
     );
 }
