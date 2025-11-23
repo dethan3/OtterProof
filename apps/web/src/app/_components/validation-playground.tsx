@@ -316,15 +316,38 @@ export function ValidationPlayground() {
                     Upload &rarr; Walrus Storage &rarr; Tusk Validate &rarr; Sui Attest
                 </p>
             </div>
-            <button
-                onClick={() => updateForm({ content: SAMPLE_DATA[form.format] })}
-                className="inline-flex items-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#7ef5dc] px-4 py-2 text-sm font-bold uppercase tracking-[0.16em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] transition hover:-translate-y-0.5"
-            >
-                <span className="grid h-4 w-4 place-items-center rounded-[6px] border border-[#0c0b16] bg-white text-[10px]">
-                    ☑
-                </span>
-                Use Sample Data
-            </button>
+            <div className="flex flex-wrap gap-3">
+                <button
+                    onClick={() => updateForm({ content: SAMPLE_DATA[form.format] })}
+                    className="inline-flex items-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#7ef5dc] px-4 py-2 text-sm font-bold uppercase tracking-[0.16em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] transition hover:-translate-y-0.5"
+                >
+                    <span className="grid h-4 w-4 place-items-center rounded-[6px] border border-[#0c0b16] bg-white text-[10px]">
+                        ☑
+                    </span>
+                    Sample
+                </button>
+                <button
+                    onClick={async () => {
+                        try {
+                            const filename = form.format === 'csv' ? 'user_comments_large.csv' : 'user_comments_large.jsonl';
+                            const res = await fetch(`/examples/${filename}`);
+                            if (!res.ok) throw new Error("Failed to load large dataset");
+                            const text = await res.text();
+                            updateForm({ content: text, datasetName: "user_comments_large" });
+                        } catch (e) {
+                            console.error(e);
+                            // eslint-disable-next-line no-alert
+                            alert("Could not load large dataset");
+                        }
+                    }}
+                    className="inline-flex items-center gap-2 rounded-full border-2 border-[#0c0b16] bg-[#ffe76b] px-4 py-2 text-sm font-bold uppercase tracking-[0.16em] text-[#0c0b16] shadow-[6px_6px_0_#0c0b16] transition hover:-translate-y-0.5"
+                >
+                    <span className="grid h-4 w-4 place-items-center rounded-[6px] border border-[#0c0b16] bg-white text-[10px]">
+                        ⚡
+                    </span>
+                    Large Data (500)
+                </button>
+            </div>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-2">
