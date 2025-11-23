@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ConnectButton } from "@mysten/dapp-kit";
@@ -36,8 +37,8 @@ export function SiteHeader() {
             Beta
           </div>
           <Link href="/" className="flex items-center gap-3 text-lg font-black tracking-tight text-[#0c0b16]">
-            <span className="grid h-10 w-10 place-items-center rounded-2xl border-2 border-[#0c0b16] bg-[#7ef5dc] text-2xl shadow-[4px_4px_0_#0c0b16]">
-              🦦
+            <span className="grid h-10 w-10 place-items-center rounded-2xl border-2 border-[#0c0b16] bg-[#7ef5dc] shadow-[4px_4px_0_#0c0b16] overflow-hidden">
+              <Image src="/otter_tusk_logo.png" alt="OtterProof logo" width={40} height={40} className="h-10 w-10 object-contain" />
             </span>
             <span className="leading-none">
               OtterProof
