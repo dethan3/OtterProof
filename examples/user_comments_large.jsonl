@@ -1,0 +1,500 @@
+{"record_id":"1","user_handle":"dave_5047","comment":"The UI is clean.","sentiment_score":0.91}
+{"record_id":"2","user_handle":"dave_1664","comment":"Why is the customer support so expensive?","sentiment_score":0.96}
+{"record_id":"3","user_handle":"mallory_8548","comment":"I think the wallet connection could be more polished.","sentiment_score":0.48}
+{"record_id":"4","user_handle":"judy_7915","comment":"Why is the API so okay?","sentiment_score":0.16}
+{"record_id":"5","user_handle":"eve_7995","comment":"I think the documentation could be more polished.","sentiment_score":0.41}
+{"record_id":"6","user_handle":"trent_9295","comment":"The customer support is terrible.","sentiment_score":0.08}
+{"record_id":"7","user_handle":"eve_8140","comment":"I think the latency could be more polished.","sentiment_score":0.59}
+{"record_id":"8","user_handle":"charlie_6390","comment":"The customer support is confusing.","sentiment_score":0.01}
+{"record_id":"9","user_handle":"walter_6812","comment":"I think the fee structure could be more polished.","sentiment_score":0.18}
+{"record_id":"10","user_handle":"bob_3855","comment":"Why is the mobile view so terrible?","sentiment_score":0.1}
+{"record_id":"11","user_handle":"heidi_2716","comment":"I think the UI could be more polished.","sentiment_score":0.31}
+{"record_id":"12","user_handle":"alice_9165","comment":"The storage is awesome.","sentiment_score":0.82}
+{"record_id":"13","user_handle":"oscar_9078","comment":"I think the mobile view could be more polished.","sentiment_score":0.66}
+{"record_id":"14","user_handle":"dave_9559","comment":"Why is the wallet connection so awesome?","sentiment_score":0.83}
+{"record_id":"15","user_handle":"mallory_313","comment":"Why is the API so clean?","sentiment_score":0.78}
+{"record_id":"16","user_handle":"heidi_636","comment":"I think the UI could be more polished.","sentiment_score":0.09}
+{"record_id":"17","user_handle":"charlie_9116","comment":"I think the transaction speed could be more polished.","sentiment_score":0.13}
+{"record_id":"18","user_handle":"charlie_8954","comment":"I think the documentation could be more polished.","sentiment_score":0.88}
+{"record_id":"19","user_handle":"dave_4172","comment":"I think the mobile view could be more polished.","sentiment_score":0.77}
+{"record_id":"20","user_handle":"eve_8947","comment":"Why is the transaction speed so slow?","sentiment_score":0.24}
+{"record_id":"21","user_handle":"frank_1641","comment":"Why is the documentation so buggy?","sentiment_score":0.01}
+{"record_id":"22","user_handle":"grace_3674","comment":"Why is the UI so clean?","sentiment_score":0.89}
+{"record_id":"23","user_handle":"grace_6660","comment":"Why is the transaction speed so terrible?","sentiment_score":0.19}
+{"record_id":"24","user_handle":"alice_442","comment":"I think the mobile view could be more polished.","sentiment_score":0.23}
+{"record_id":"25","user_handle":"judy_6793","comment":"The data validation is intuitive.","sentiment_score":0.72}
+{"record_id":"26","user_handle":"judy_6590","comment":"The documentation is confusing.","sentiment_score":0.07}
+{"record_id":"27","user_handle":"grace_7547","comment":"The storage is awesome.","sentiment_score":0.72}
+{"record_id":"28","user_handle":"frank_8845","comment":"Why is the fee structure so terrible?","sentiment_score":0.11}
+{"record_id":"29","user_handle":"sybil_5629","comment":"I think the fee structure could be more polished.","sentiment_score":0.51}
+{"record_id":"30","user_handle":"sybil_2236","comment":"The fee structure is slow.","sentiment_score":0.22}
+{"record_id":"31","user_handle":"charlie_2247","comment":"Why is the data validation so fast?","sentiment_score":0.73}
+{"record_id":"32","user_handle":"trent_4830","comment":"The transaction speed is clean.","sentiment_score":0.9}
+{"record_id":"33","user_handle":"ivan_9022","comment":"I think the transaction speed could be more polished.","sentiment_score":0.75}
+{"record_id":"34","user_handle":"oscar_6822","comment":"I think the storage could be more polished.","sentiment_score":0.85}
+{"record_id":"35","user_handle":"trent_2723","comment":"The color scheme is confusing.","sentiment_score":0.09}
+{"record_id":"36","user_handle":"oscar_1469","comment":"Why is the data validation so expensive?","sentiment_score":0.06}
+{"record_id":"37","user_handle":"alice_5549","comment":"The wallet connection is messy.","sentiment_score":0.02}
+{"record_id":"38","user_handle":"mallory_5132","comment":"I think the UI could be more polished.","sentiment_score":0.98}
+{"record_id":"39","user_handle":"heidi_6919","comment":"Why is the documentation so secure?","sentiment_score":0.12}
+{"record_id":"40","user_handle":"ivan_2756","comment":"Why is the latency so clean?","sentiment_score":0.86}
+{"record_id":"41","user_handle":"bob_5699","comment":"The wallet connection is clean.","sentiment_score":0.91}
+{"record_id":"42","user_handle":"judy_1265","comment":"Why is the documentation so great?","sentiment_score":0.84}
+{"record_id":"43","user_handle":"oscar_1736","comment":"I think the API could be more polished.","sentiment_score":0.7}
+{"record_id":"44","user_handle":"oscar_9208","comment":"I think the wallet connection could be more polished.","sentiment_score":0.98}
+{"record_id":"45","user_handle":"frank_828","comment":"Why is the data validation so fast?","sentiment_score":0.93}
+{"record_id":"46","user_handle":"mallory_800","comment":"Why is the documentation so messy?","sentiment_score":0.06}
+{"record_id":"47","user_handle":"walter_4558","comment":"The wallet connection is confusing.","sentiment_score":0.12}
+{"record_id":"48","user_handle":"mallory_4557","comment":"I think the fee structure could be more polished.","sentiment_score":0.37}
+{"record_id":"49","user_handle":"mallory_6212","comment":"Why is the transaction speed so fast?","sentiment_score":0.92}
+{"record_id":"50","user_handle":"judy_1760","comment":"Why is the fee structure so okay?","sentiment_score":0.61}
+{"record_id":"51","user_handle":"sybil_9653","comment":"Why is the storage so confusing?","sentiment_score":0.1}
+{"record_id":"52","user_handle":"mallory_9747","comment":"The storage is intuitive.","sentiment_score":0.92}
+{"record_id":"53","user_handle":"dave_5107","comment":"I think the data validation could be more polished.","sentiment_score":0.76}
+{"record_id":"54","user_handle":"heidi_7983","comment":"Why is the API so clean?","sentiment_score":0.84}
+{"record_id":"55","user_handle":"oscar_2755","comment":"The data validation is buggy.","sentiment_score":0.18}
+{"record_id":"56","user_handle":"judy_1344","comment":"The mobile view is intuitive.","sentiment_score":0.93}
+{"record_id":"57","user_handle":"eve_6862","comment":"Why is the wallet connection so buggy?","sentiment_score":0.27}
+{"record_id":"58","user_handle":"alice_7792","comment":"I think the data validation could be more polished.","sentiment_score":0.54}
+{"record_id":"59","user_handle":"grace_2500","comment":"Why is the fee structure so slow?","sentiment_score":0.06}
+{"record_id":"60","user_handle":"judy_7207","comment":"Why is the documentation so okay?","sentiment_score":0.23}
+{"record_id":"61","user_handle":"oscar_3107","comment":"The storage is intuitive.","sentiment_score":0.83}
+{"record_id":"62","user_handle":"walter_3996","comment":"I think the customer support could be more fast.","sentiment_score":0.86}
+{"record_id":"63","user_handle":"charlie_6110","comment":"I think the latency could be more polished.","sentiment_score":0.53}
+{"record_id":"64","user_handle":"walter_2707","comment":"Why is the wallet connection so expensive?","sentiment_score":0.66}
+{"record_id":"65","user_handle":"sybil_876","comment":"Why is the customer support so awesome?","sentiment_score":0.92}
+{"record_id":"66","user_handle":"judy_2040","comment":"I think the fee structure could be more polished.","sentiment_score":0.95}
+{"record_id":"67","user_handle":"dave_81","comment":"I think the transaction speed could be more polished.","sentiment_score":0.31}
+{"record_id":"68","user_handle":"bob_6930","comment":"Why is the wallet connection so messy?","sentiment_score":0.26}
+{"record_id":"69","user_handle":"oscar_9852","comment":"The latency is intuitive.","sentiment_score":0.88}
+{"record_id":"70","user_handle":"sybil_101","comment":"I think the wallet connection could be more polished.","sentiment_score":0.28}
+{"record_id":"71","user_handle":"heidi_1214","comment":"I think the API could be more polished.","sentiment_score":0.04}
+{"record_id":"72","user_handle":"mallory_1543","comment":"The API is confusing.","sentiment_score":0.05}
+{"record_id":"73","user_handle":"dave_3286","comment":"I think the mobile view could be more polished.","sentiment_score":0.43}
+{"record_id":"74","user_handle":"grace_525","comment":"The customer support is terrible.","sentiment_score":0.1}
+{"record_id":"75","user_handle":"peggy_7451","comment":"The documentation is awesome.","sentiment_score":0.71}
+{"record_id":"76","user_handle":"grace_8759","comment":"I think the fee structure could be more polished.","sentiment_score":0.8}
+{"record_id":"77","user_handle":"sybil_9314","comment":"The latency is expensive.","sentiment_score":0.33}
+{"record_id":"78","user_handle":"grace_2033","comment":"I think the color scheme could be more fast.","sentiment_score":0.91}
+{"record_id":"79","user_handle":"walter_4250","comment":"Why is the customer support so buggy?","sentiment_score":0.05}
+{"record_id":"80","user_handle":"dave_1096","comment":"I think the latency could be more polished.","sentiment_score":0.41}
+{"record_id":"81","user_handle":"walter_7079","comment":"The storage is buggy.","sentiment_score":0.05}
+{"record_id":"82","user_handle":"heidi_5974","comment":"Why is the transaction speed so confusing?","sentiment_score":0.1}
+{"record_id":"83","user_handle":"mallory_2323","comment":"The latency is awesome.","sentiment_score":0.73}
+{"record_id":"84","user_handle":"dave_567","comment":"Why is the transaction speed so fast?","sentiment_score":0.83}
+{"record_id":"85","user_handle":"mallory_7633","comment":"I think the storage could be more polished.","sentiment_score":0.45}
+{"record_id":"86","user_handle":"dave_6070","comment":"Why is the data validation so secure?","sentiment_score":0.18}
+{"record_id":"87","user_handle":"alice_9492","comment":"I think the color scheme could be more polished.","sentiment_score":0.9}
+{"record_id":"88","user_handle":"ivan_4195","comment":"I think the storage could be more polished.","sentiment_score":0.26}
+{"record_id":"89","user_handle":"trent_9059","comment":"The latency is confusing.","sentiment_score":0.1}
+{"record_id":"90","user_handle":"oscar_4046","comment":"Why is the storage so fast?","sentiment_score":0.79}
+{"record_id":"91","user_handle":"oscar_3110","comment":"The UI is secure.","sentiment_score":0.36}
+{"record_id":"92","user_handle":"bob_4762","comment":"I think the UI could be more polished.","sentiment_score":0.19}
+{"record_id":"93","user_handle":"ivan_7438","comment":"The transaction speed is slow.","sentiment_score":0.23}
+{"record_id":"94","user_handle":"alice_8379","comment":"I think the mobile view could be more polished.","sentiment_score":0.69}
+{"record_id":"95","user_handle":"heidi_6000","comment":"The color scheme is buggy.","sentiment_score":0.29}
+{"record_id":"96","user_handle":"frank_9319","comment":"I think the data validation could be more polished.","sentiment_score":0.83}
+{"record_id":"97","user_handle":"mallory_4415","comment":"The API is okay.","sentiment_score":0.93}
+{"record_id":"98","user_handle":"heidi_9295","comment":"I think the storage could be more polished.","sentiment_score":0.88}
+{"record_id":"99","user_handle":"judy_9146","comment":"Why is the fee structure so slow?","sentiment_score":0.06}
+{"record_id":"100","user_handle":"ivan_9952","comment":"The color scheme is great.","sentiment_score":0.92}
+{"record_id":"101","user_handle":"judy_7580","comment":"I think the customer support could be more fast.","sentiment_score":0.97}
+{"record_id":"102","user_handle":"dave_7","comment":"I think the latency could be more polished.","sentiment_score":0.54}
+{"record_id":"103","user_handle":"ivan_8866","comment":"The documentation is fast.","sentiment_score":0.89}
+{"record_id":"104","user_handle":"ivan_2402","comment":"The storage is messy.","sentiment_score":0.18}
+{"record_id":"105","user_handle":"bob_7820","comment":"I think the transaction speed could be more polished.","sentiment_score":0.38}
+{"record_id":"106","user_handle":"oscar_319","comment":"I think the UI could be more polished.","sentiment_score":0.54}
+{"record_id":"107","user_handle":"ivan_9066","comment":"The data validation is fast.","sentiment_score":0.86}
+{"record_id":"108","user_handle":"bob_389","comment":"The UI is cheap.","sentiment_score":0.32}
+{"record_id":"109","user_handle":"heidi_7049","comment":"I think the customer support could be more polished.","sentiment_score":0.35}
+{"record_id":"110","user_handle":"oscar_2838","comment":"I think the documentation could be more polished.","sentiment_score":0.7}
+{"record_id":"111","user_handle":"grace_5090","comment":"The data validation is intuitive.","sentiment_score":0.8}
+{"record_id":"112","user_handle":"eve_9623","comment":"The data validation is great.","sentiment_score":0.78}
+{"record_id":"113","user_handle":"alice_5722","comment":"Why is the customer support so intuitive?","sentiment_score":0.88}
+{"record_id":"114","user_handle":"charlie_6533","comment":"The color scheme is confusing.","sentiment_score":0.02}
+{"record_id":"115","user_handle":"dave_2168","comment":"Why is the fee structure so intuitive?","sentiment_score":0.92}
+{"record_id":"116","user_handle":"trent_8531","comment":"I think the storage could be more fast.","sentiment_score":0.74}
+{"record_id":"117","user_handle":"frank_445","comment":"Why is the color scheme so terrible?","sentiment_score":0.12}
+{"record_id":"118","user_handle":"grace_3930","comment":"Why is the customer support so expensive?","sentiment_score":0.31}
+{"record_id":"119","user_handle":"judy_6002","comment":"Why is the API so messy?","sentiment_score":0.24}
+{"record_id":"120","user_handle":"peggy_6246","comment":"Why is the wallet connection so confusing?","sentiment_score":0.04}
+{"record_id":"121","user_handle":"eve_6408","comment":"Why is the mobile view so clean?","sentiment_score":0.77}
+{"record_id":"122","user_handle":"charlie_2760","comment":"The customer support is awesome.","sentiment_score":0.9}
+{"record_id":"123","user_handle":"eve_3446","comment":"Why is the wallet connection so intuitive?","sentiment_score":0.81}
+{"record_id":"124","user_handle":"walter_2977","comment":"Why is the transaction speed so slow?","sentiment_score":0.13}
+{"record_id":"125","user_handle":"frank_5463","comment":"I think the transaction speed could be more polished.","sentiment_score":0.46}
+{"record_id":"126","user_handle":"mallory_5966","comment":"Why is the documentation so messy?","sentiment_score":0.1}
+{"record_id":"127","user_handle":"walter_6788","comment":"The API is buggy.","sentiment_score":0.22}
+{"record_id":"128","user_handle":"peggy_4387","comment":"Why is the mobile view so awesome?","sentiment_score":0.93}
+{"record_id":"129","user_handle":"ivan_6997","comment":"I think the latency could be more polished.","sentiment_score":0.26}
+{"record_id":"130","user_handle":"sybil_7385","comment":"I think the wallet connection could be more polished.","sentiment_score":0.11}
+{"record_id":"131","user_handle":"walter_5445","comment":"I think the documentation could be more polished.","sentiment_score":0.65}
+{"record_id":"132","user_handle":"judy_4310","comment":"Why is the color scheme so great?","sentiment_score":0.88}
+{"record_id":"133","user_handle":"mallory_7445","comment":"I think the transaction speed could be more polished.","sentiment_score":0.74}
+{"record_id":"134","user_handle":"heidi_8959","comment":"Why is the wallet connection so fast?","sentiment_score":0.94}
+{"record_id":"135","user_handle":"peggy_6977","comment":"I think the fee structure could be more polished.","sentiment_score":0.7}
+{"record_id":"136","user_handle":"heidi_474","comment":"I think the latency could be more polished.","sentiment_score":0.19}
+{"record_id":"137","user_handle":"frank_3060","comment":"The storage is slow.","sentiment_score":0.03}
+{"record_id":"138","user_handle":"charlie_9153","comment":"I think the UI could be more polished.","sentiment_score":0.71}
+{"record_id":"139","user_handle":"heidi_1275","comment":"I think the latency could be more polished.","sentiment_score":0.02}
+{"record_id":"140","user_handle":"charlie_8347","comment":"The wallet connection is expensive.","sentiment_score":0.41}
+{"record_id":"141","user_handle":"eve_7069","comment":"The wallet connection is awesome.","sentiment_score":0.88}
+{"record_id":"142","user_handle":"dave_5700","comment":"The mobile view is okay.","sentiment_score":0.9}
+{"record_id":"143","user_handle":"trent_5966","comment":"The fee structure is intuitive.","sentiment_score":0.87}
+{"record_id":"144","user_handle":"trent_4925","comment":"Why is the documentation so fast?","sentiment_score":0.79}
+{"record_id":"145","user_handle":"ivan_3582","comment":"Why is the storage so messy?","sentiment_score":0.14}
+{"record_id":"146","user_handle":"heidi_1432","comment":"I think the latency could be more polished.","sentiment_score":0.03}
+{"record_id":"147","user_handle":"heidi_8829","comment":"The API is fast.","sentiment_score":0.92}
+{"record_id":"148","user_handle":"bob_6112","comment":"I think the wallet connection could be more polished.","sentiment_score":0.02}
+{"record_id":"149","user_handle":"walter_2753","comment":"Why is the transaction speed so okay?","sentiment_score":0.58}
+{"record_id":"150","user_handle":"eve_6829","comment":"The customer support is slow.","sentiment_score":0.19}
+{"record_id":"151","user_handle":"peggy_9017","comment":"I think the data validation could be more polished.","sentiment_score":0.25}
+{"record_id":"152","user_handle":"heidi_4771","comment":"The wallet connection is fast.","sentiment_score":0.79}
+{"record_id":"153","user_handle":"ivan_1213","comment":"The API is buggy.","sentiment_score":0.27}
+{"record_id":"154","user_handle":"bob_8233","comment":"The storage is messy.","sentiment_score":0.28}
+{"record_id":"155","user_handle":"bob_16","comment":"I think the wallet connection could be more polished.","sentiment_score":0.46}
+{"record_id":"156","user_handle":"ivan_1783","comment":"I think the latency could be more polished.","sentiment_score":0.78}
+{"record_id":"157","user_handle":"walter_5060","comment":"The wallet connection is clean.","sentiment_score":0.7}
+{"record_id":"158","user_handle":"alice_40","comment":"I think the data validation could be more polished.","sentiment_score":0.02}
+{"record_id":"159","user_handle":"peggy_2697","comment":"I think the customer support could be more polished.","sentiment_score":0.63}
+{"record_id":"160","user_handle":"walter_1554","comment":"I think the mobile view could be more polished.","sentiment_score":0.32}
+{"record_id":"161","user_handle":"bob_5721","comment":"Why is the wallet connection so confusing?","sentiment_score":0.19}
+{"record_id":"162","user_handle":"charlie_4801","comment":"Why is the UI so okay?","sentiment_score":0.8}
+{"record_id":"163","user_handle":"heidi_6690","comment":"I think the latency could be more polished.","sentiment_score":0.6}
+{"record_id":"164","user_handle":"frank_3934","comment":"I think the documentation could be more polished.","sentiment_score":0.78}
+{"record_id":"165","user_handle":"alice_1409","comment":"I think the latency could be more polished.","sentiment_score":0.03}
+{"record_id":"166","user_handle":"peggy_9648","comment":"The color scheme is secure.","sentiment_score":0.7}
+{"record_id":"167","user_handle":"bob_708","comment":"Why is the color scheme so secure?","sentiment_score":0.89}
+{"record_id":"168","user_handle":"trent_9503","comment":"Why is the data validation so clean?","sentiment_score":0.96}
+{"record_id":"169","user_handle":"heidi_4583","comment":"I think the documentation could be more polished.","sentiment_score":0.55}
+{"record_id":"170","user_handle":"heidi_3943","comment":"I think the UI could be more polished.","sentiment_score":0.26}
+{"record_id":"171","user_handle":"heidi_4689","comment":"I think the mobile view could be more polished.","sentiment_score":0.91}
+{"record_id":"172","user_handle":"charlie_6140","comment":"The latency is confusing.","sentiment_score":0.11}
+{"record_id":"173","user_handle":"walter_1590","comment":"Why is the wallet connection so awesome?","sentiment_score":0.81}
+{"record_id":"174","user_handle":"peggy_8250","comment":"I think the storage could be more polished.","sentiment_score":0.52}
+{"record_id":"175","user_handle":"bob_2651","comment":"I think the documentation could be more polished.","sentiment_score":0.77}
+{"record_id":"176","user_handle":"eve_4655","comment":"The API is messy.","sentiment_score":0.1}
+{"record_id":"177","user_handle":"peggy_5656","comment":"The API is confusing.","sentiment_score":0.28}
+{"record_id":"178","user_handle":"walter_2965","comment":"I think the color scheme could be more polished.","sentiment_score":0.15}
+{"record_id":"179","user_handle":"walter_878","comment":"Why is the UI so messy?","sentiment_score":0.22}
+{"record_id":"180","user_handle":"peggy_6246","comment":"The latency is expensive.","sentiment_score":0.65}
+{"record_id":"181","user_handle":"sybil_3944","comment":"Why is the fee structure so intuitive?","sentiment_score":0.71}
+{"record_id":"182","user_handle":"judy_9041","comment":"I think the API could be more polished.","sentiment_score":0.55}
+{"record_id":"183","user_handle":"eve_4952","comment":"The UI is great.","sentiment_score":0.81}
+{"record_id":"184","user_handle":"grace_8195","comment":"The storage is slow.","sentiment_score":0.03}
+{"record_id":"185","user_handle":"dave_2924","comment":"I think the documentation could be more polished.","sentiment_score":0.1}
+{"record_id":"186","user_handle":"walter_5957","comment":"I think the latency could be more polished.","sentiment_score":0.41}
+{"record_id":"187","user_handle":"judy_698","comment":"The documentation is secure.","sentiment_score":0.09}
+{"record_id":"188","user_handle":"mallory_5905","comment":"I think the latency could be more polished.","sentiment_score":0.76}
+{"record_id":"189","user_handle":"charlie_3358","comment":"The latency is messy.","sentiment_score":0.2}
+{"record_id":"190","user_handle":"charlie_3219","comment":"Why is the API so secure?","sentiment_score":0.15}
+{"record_id":"191","user_handle":"peggy_3453","comment":"The transaction speed is slow.","sentiment_score":0.24}
+{"record_id":"192","user_handle":"grace_8000","comment":"The UI is messy.","sentiment_score":0.26}
+{"record_id":"193","user_handle":"heidi_9158","comment":"The color scheme is confusing.","sentiment_score":0.07}
+{"record_id":"194","user_handle":"judy_7740","comment":"Why is the latency so secure?","sentiment_score":0.17}
+{"record_id":"195","user_handle":"oscar_9169","comment":"Why is the wallet connection so okay?","sentiment_score":0.9}
+{"record_id":"196","user_handle":"frank_9880","comment":"I think the mobile view could be more polished.","sentiment_score":0.39}
+{"record_id":"197","user_handle":"peggy_873","comment":"The transaction speed is cheap.","sentiment_score":0.54}
+{"record_id":"198","user_handle":"mallory_5458","comment":"Why is the wallet connection so great?","sentiment_score":0.99}
+{"record_id":"199","user_handle":"oscar_6805","comment":"Why is the color scheme so cheap?","sentiment_score":0.49}
+{"record_id":"200","user_handle":"eve_606","comment":"Why is the wallet connection so awesome?","sentiment_score":0.95}
+{"record_id":"201","user_handle":"grace_9790","comment":"I think the API could be more polished.","sentiment_score":0.94}
+{"record_id":"202","user_handle":"bob_3515","comment":"I think the fee structure could be more polished.","sentiment_score":0.61}
+{"record_id":"203","user_handle":"alice_5393","comment":"Why is the latency so okay?","sentiment_score":0.62}
+{"record_id":"204","user_handle":"alice_5270","comment":"The fee structure is confusing.","sentiment_score":0.15}
+{"record_id":"205","user_handle":"charlie_451","comment":"The storage is intuitive.","sentiment_score":0.98}
+{"record_id":"206","user_handle":"ivan_5916","comment":"I think the color scheme could be more polished.","sentiment_score":0.34}
+{"record_id":"207","user_handle":"dave_2484","comment":"I think the fee structure could be more polished.","sentiment_score":0.16}
+{"record_id":"208","user_handle":"grace_8869","comment":"I think the transaction speed could be more polished.","sentiment_score":0.78}
+{"record_id":"209","user_handle":"peggy_3774","comment":"The mobile view is terrible.","sentiment_score":0.12}
+{"record_id":"210","user_handle":"ivan_9309","comment":"I think the storage could be more polished.","sentiment_score":0.05}
+{"record_id":"211","user_handle":"peggy_3606","comment":"Why is the latency so expensive?","sentiment_score":0.47}
+{"record_id":"212","user_handle":"trent_1084","comment":"I think the data validation could be more polished.","sentiment_score":0.44}
+{"record_id":"213","user_handle":"sybil_8666","comment":"I think the transaction speed could be more fast.","sentiment_score":0.9}
+{"record_id":"214","user_handle":"charlie_4787","comment":"I think the documentation could be more polished.","sentiment_score":0.9}
+{"record_id":"215","user_handle":"mallory_6340","comment":"The transaction speed is clean.","sentiment_score":0.85}
+{"record_id":"216","user_handle":"alice_1186","comment":"The UI is awesome.","sentiment_score":0.87}
+{"record_id":"217","user_handle":"mallory_3577","comment":"Why is the UI so fast?","sentiment_score":0.8}
+{"record_id":"218","user_handle":"eve_5531","comment":"I think the UI could be more polished.","sentiment_score":0.89}
+{"record_id":"219","user_handle":"walter_9986","comment":"Why is the UI so secure?","sentiment_score":0.21}
+{"record_id":"220","user_handle":"heidi_5217","comment":"Why is the documentation so intuitive?","sentiment_score":0.74}
+{"record_id":"221","user_handle":"bob_5143","comment":"Why is the color scheme so messy?","sentiment_score":0.29}
+{"record_id":"222","user_handle":"walter_2210","comment":"Why is the API so expensive?","sentiment_score":0.05}
+{"record_id":"223","user_handle":"peggy_6932","comment":"I think the documentation could be more polished.","sentiment_score":0.59}
+{"record_id":"224","user_handle":"mallory_3290","comment":"Why is the color scheme so clean?","sentiment_score":0.71}
+{"record_id":"225","user_handle":"ivan_7254","comment":"Why is the mobile view so okay?","sentiment_score":0.65}
+{"record_id":"226","user_handle":"dave_12","comment":"I think the latency could be more polished.","sentiment_score":0.61}
+{"record_id":"227","user_handle":"trent_6597","comment":"I think the latency could be more polished.","sentiment_score":0.82}
+{"record_id":"228","user_handle":"dave_7446","comment":"I think the fee structure could be more polished.","sentiment_score":0.52}
+{"record_id":"229","user_handle":"ivan_8354","comment":"Why is the UI so expensive?","sentiment_score":0.39}
+{"record_id":"230","user_handle":"grace_2889","comment":"The wallet connection is okay.","sentiment_score":0.72}
+{"record_id":"231","user_handle":"grace_6820","comment":"Why is the customer support so okay?","sentiment_score":0.37}
+{"record_id":"232","user_handle":"eve_8750","comment":"Why is the UI so terrible?","sentiment_score":0.17}
+{"record_id":"233","user_handle":"peggy_1526","comment":"I think the UI could be more polished.","sentiment_score":0.83}
+{"record_id":"234","user_handle":"grace_4808","comment":"The data validation is slow.","sentiment_score":0.22}
+{"record_id":"235","user_handle":"mallory_2834","comment":"Why is the wallet connection so awesome?","sentiment_score":0.94}
+{"record_id":"236","user_handle":"sybil_4452","comment":"The color scheme is slow.","sentiment_score":0.17}
+{"record_id":"237","user_handle":"walter_416","comment":"Why is the UI so expensive?","sentiment_score":0.2}
+{"record_id":"238","user_handle":"walter_8484","comment":"I think the data validation could be more polished.","sentiment_score":0.01}
+{"record_id":"239","user_handle":"ivan_4209","comment":"Why is the storage so intuitive?","sentiment_score":0.71}
+{"record_id":"240","user_handle":"mallory_9933","comment":"Why is the color scheme so clean?","sentiment_score":0.81}
+{"record_id":"241","user_handle":"peggy_1010","comment":"I think the mobile view could be more polished.","sentiment_score":0.82}
+{"record_id":"242","user_handle":"sybil_8873","comment":"The transaction speed is buggy.","sentiment_score":0.23}
+{"record_id":"243","user_handle":"mallory_8000","comment":"I think the storage could be more fast.","sentiment_score":0.84}
+{"record_id":"244","user_handle":"eve_2740","comment":"Why is the UI so secure?","sentiment_score":0.2}
+{"record_id":"245","user_handle":"alice_8702","comment":"I think the UI could be more polished.","sentiment_score":0.95}
+{"record_id":"246","user_handle":"sybil_209","comment":"Why is the storage so terrible?","sentiment_score":0.1}
+{"record_id":"247","user_handle":"walter_5135","comment":"I think the UI could be more polished.","sentiment_score":0.51}
+{"record_id":"248","user_handle":"judy_5041","comment":"The transaction speed is clean.","sentiment_score":0.8}
+{"record_id":"249","user_handle":"heidi_6986","comment":"The data validation is terrible.","sentiment_score":0.28}
+{"record_id":"250","user_handle":"frank_1856","comment":"Why is the storage so buggy?","sentiment_score":0.04}
+{"record_id":"251","user_handle":"sybil_7398","comment":"The UI is confusing.","sentiment_score":0.24}
+{"record_id":"252","user_handle":"walter_7729","comment":"I think the color scheme could be more polished.","sentiment_score":0.13}
+{"record_id":"253","user_handle":"heidi_4138","comment":"The color scheme is fast.","sentiment_score":0.97}
+{"record_id":"254","user_handle":"heidi_8324","comment":"Why is the transaction speed so clean?","sentiment_score":0.82}
+{"record_id":"255","user_handle":"peggy_4838","comment":"Why is the API so messy?","sentiment_score":0.24}
+{"record_id":"256","user_handle":"heidi_7633","comment":"I think the data validation could be more polished.","sentiment_score":0.52}
+{"record_id":"257","user_handle":"alice_5550","comment":"The storage is expensive.","sentiment_score":0.14}
+{"record_id":"258","user_handle":"bob_6491","comment":"Why is the transaction speed so terrible?","sentiment_score":0.27}
+{"record_id":"259","user_handle":"alice_987","comment":"The documentation is slow.","sentiment_score":0.2}
+{"record_id":"260","user_handle":"peggy_7147","comment":"I think the wallet connection could be more polished.","sentiment_score":0.01}
+{"record_id":"261","user_handle":"grace_7293","comment":"I think the UI could be more polished.","sentiment_score":0.55}
+{"record_id":"262","user_handle":"grace_6008","comment":"The transaction speed is confusing.","sentiment_score":0.08}
+{"record_id":"263","user_handle":"eve_4178","comment":"I think the transaction speed could be more polished.","sentiment_score":0.92}
+{"record_id":"264","user_handle":"walter_8444","comment":"Why is the API so cheap?","sentiment_score":0.96}
+{"record_id":"265","user_handle":"bob_2603","comment":"I think the wallet connection could be more polished.","sentiment_score":0.71}
+{"record_id":"266","user_handle":"sybil_982","comment":"Why is the documentation so secure?","sentiment_score":0.83}
+{"record_id":"267","user_handle":"trent_5876","comment":"The UI is confusing.","sentiment_score":0.29}
+{"record_id":"268","user_handle":"walter_1113","comment":"Why is the fee structure so intuitive?","sentiment_score":0.74}
+{"record_id":"269","user_handle":"dave_3758","comment":"Why is the wallet connection so awesome?","sentiment_score":0.75}
+{"record_id":"270","user_handle":"trent_7031","comment":"Why is the UI so intuitive?","sentiment_score":0.81}
+{"record_id":"271","user_handle":"alice_1076","comment":"I think the storage could be more polished.","sentiment_score":0.77}
+{"record_id":"272","user_handle":"walter_7843","comment":"I think the UI could be more fast.","sentiment_score":0.97}
+{"record_id":"273","user_handle":"eve_9806","comment":"Why is the latency so cheap?","sentiment_score":0.12}
+{"record_id":"274","user_handle":"heidi_5288","comment":"Why is the API so slow?","sentiment_score":0.03}
+{"record_id":"275","user_handle":"bob_7251","comment":"The latency is buggy.","sentiment_score":0.06}
+{"record_id":"276","user_handle":"grace_7992","comment":"Why is the mobile view so okay?","sentiment_score":0.58}
+{"record_id":"277","user_handle":"peggy_8702","comment":"I think the mobile view could be more fast.","sentiment_score":0.97}
+{"record_id":"278","user_handle":"walter_9545","comment":"Why is the fee structure so fast?","sentiment_score":0.81}
+{"record_id":"279","user_handle":"sybil_5872","comment":"I think the color scheme could be more polished.","sentiment_score":0.9}
+{"record_id":"280","user_handle":"mallory_7353","comment":"The transaction speed is great.","sentiment_score":0.84}
+{"record_id":"281","user_handle":"oscar_5157","comment":"I think the customer support could be more polished.","sentiment_score":0.24}
+{"record_id":"282","user_handle":"walter_9628","comment":"I think the latency could be more polished.","sentiment_score":0.63}
+{"record_id":"283","user_handle":"judy_4675","comment":"I think the mobile view could be more polished.","sentiment_score":0.85}
+{"record_id":"284","user_handle":"sybil_3941","comment":"I think the customer support could be more polished.","sentiment_score":0.62}
+{"record_id":"285","user_handle":"alice_6147","comment":"Why is the wallet connection so terrible?","sentiment_score":0.05}
+{"record_id":"286","user_handle":"charlie_9985","comment":"I think the fee structure could be more polished.","sentiment_score":0.36}
+{"record_id":"287","user_handle":"ivan_6248","comment":"Why is the documentation so fast?","sentiment_score":0.92}
+{"record_id":"288","user_handle":"heidi_7041","comment":"I think the storage could be more polished.","sentiment_score":0.06}
+{"record_id":"289","user_handle":"oscar_5337","comment":"The color scheme is intuitive.","sentiment_score":0.86}
+{"record_id":"290","user_handle":"bob_3368","comment":"The latency is intuitive.","sentiment_score":0.9}
+{"record_id":"291","user_handle":"trent_1206","comment":"I think the data validation could be more polished.","sentiment_score":0.73}
+{"record_id":"292","user_handle":"oscar_5907","comment":"I think the customer support could be more polished.","sentiment_score":0.7}
+{"record_id":"293","user_handle":"frank_4424","comment":"Why is the fee structure so fast?","sentiment_score":0.92}
+{"record_id":"294","user_handle":"judy_2362","comment":"I think the UI could be more polished.","sentiment_score":0.05}
+{"record_id":"295","user_handle":"heidi_8418","comment":"Why is the color scheme so buggy?","sentiment_score":0.27}
+{"record_id":"296","user_handle":"mallory_8273","comment":"Why is the latency so secure?","sentiment_score":0.59}
+{"record_id":"297","user_handle":"bob_7423","comment":"Why is the API so terrible?","sentiment_score":0.17}
+{"record_id":"298","user_handle":"alice_2332","comment":"I think the fee structure could be more polished.","sentiment_score":0.34}
+{"record_id":"299","user_handle":"trent_1543","comment":"Why is the wallet connection so awesome?","sentiment_score":0.97}
+{"record_id":"300","user_handle":"charlie_7278","comment":"I think the fee structure could be more polished.","sentiment_score":0.37}
+{"record_id":"301","user_handle":"charlie_3544","comment":"I think the storage could be more polished.","sentiment_score":0.25}
+{"record_id":"302","user_handle":"eve_5631","comment":"The wallet connection is slow.","sentiment_score":0.06}
+{"record_id":"303","user_handle":"sybil_3866","comment":"Why is the fee structure so cheap?","sentiment_score":0.9}
+{"record_id":"304","user_handle":"trent_5156","comment":"I think the API could be more polished.","sentiment_score":0.67}
+{"record_id":"305","user_handle":"dave_1093","comment":"I think the wallet connection could be more polished.","sentiment_score":0.18}
+{"record_id":"306","user_handle":"bob_9329","comment":"Why is the UI so fast?","sentiment_score":0.81}
+{"record_id":"307","user_handle":"oscar_369","comment":"I think the API could be more polished.","sentiment_score":0.08}
+{"record_id":"308","user_handle":"dave_905","comment":"I think the latency could be more polished.","sentiment_score":0.36}
+{"record_id":"309","user_handle":"grace_6507","comment":"Why is the transaction speed so clean?","sentiment_score":0.99}
+{"record_id":"310","user_handle":"grace_5304","comment":"I think the mobile view could be more polished.","sentiment_score":0.7}
+{"record_id":"311","user_handle":"dave_3898","comment":"Why is the customer support so awesome?","sentiment_score":1}
+{"record_id":"312","user_handle":"frank_5712","comment":"Why is the data validation so terrible?","sentiment_score":0.09}
+{"record_id":"313","user_handle":"oscar_7081","comment":"The color scheme is terrible.","sentiment_score":0.14}
+{"record_id":"314","user_handle":"judy_4327","comment":"I think the API could be more polished.","sentiment_score":0.36}
+{"record_id":"315","user_handle":"eve_4546","comment":"Why is the customer support so confusing?","sentiment_score":0.08}
+{"record_id":"316","user_handle":"sybil_3851","comment":"Why is the transaction speed so slow?","sentiment_score":0.21}
+{"record_id":"317","user_handle":"sybil_9663","comment":"I think the customer support could be more fast.","sentiment_score":0.76}
+{"record_id":"318","user_handle":"frank_3145","comment":"Why is the fee structure so confusing?","sentiment_score":0.12}
+{"record_id":"319","user_handle":"ivan_9145","comment":"The latency is cheap.","sentiment_score":0.25}
+{"record_id":"320","user_handle":"eve_867","comment":"The latency is awesome.","sentiment_score":0.86}
+{"record_id":"321","user_handle":"alice_6701","comment":"Why is the mobile view so confusing?","sentiment_score":0.27}
+{"record_id":"322","user_handle":"trent_1392","comment":"Why is the documentation so secure?","sentiment_score":0.29}
+{"record_id":"323","user_handle":"charlie_7805","comment":"I think the API could be more polished.","sentiment_score":0.04}
+{"record_id":"324","user_handle":"peggy_6955","comment":"Why is the mobile view so fast?","sentiment_score":0.73}
+{"record_id":"325","user_handle":"charlie_5379","comment":"Why is the color scheme so fast?","sentiment_score":0.85}
+{"record_id":"326","user_handle":"frank_1463","comment":"I think the storage could be more polished.","sentiment_score":0.94}
+{"record_id":"327","user_handle":"alice_2280","comment":"I think the storage could be more polished.","sentiment_score":0.92}
+{"record_id":"328","user_handle":"mallory_6345","comment":"I think the data validation could be more polished.","sentiment_score":0.92}
+{"record_id":"329","user_handle":"grace_6293","comment":"I think the wallet connection could be more polished.","sentiment_score":0.01}
+{"record_id":"330","user_handle":"charlie_5340","comment":"Why is the customer support so buggy?","sentiment_score":0.03}
+{"record_id":"331","user_handle":"mallory_6913","comment":"I think the API could be more polished.","sentiment_score":0.1}
+{"record_id":"332","user_handle":"heidi_2320","comment":"I think the API could be more polished.","sentiment_score":0.5}
+{"record_id":"333","user_handle":"eve_3792","comment":"Why is the UI so terrible?","sentiment_score":0.11}
+{"record_id":"334","user_handle":"eve_6746","comment":"The storage is secure.","sentiment_score":0.5}
+{"record_id":"335","user_handle":"eve_2783","comment":"I think the transaction speed could be more polished.","sentiment_score":0.73}
+{"record_id":"336","user_handle":"frank_4437","comment":"Why is the storage so intuitive?","sentiment_score":0.93}
+{"record_id":"337","user_handle":"alice_4890","comment":"I think the data validation could be more polished.","sentiment_score":0.86}
+{"record_id":"338","user_handle":"judy_4490","comment":"Why is the documentation so clean?","sentiment_score":0.78}
+{"record_id":"339","user_handle":"bob_5540","comment":"The wallet connection is confusing.","sentiment_score":0.23}
+{"record_id":"340","user_handle":"ivan_2933","comment":"Why is the data validation so cheap?","sentiment_score":0.84}
+{"record_id":"341","user_handle":"oscar_1609","comment":"Why is the documentation so buggy?","sentiment_score":0.05}
+{"record_id":"342","user_handle":"walter_3240","comment":"I think the fee structure could be more polished.","sentiment_score":0.85}
+{"record_id":"343","user_handle":"frank_9562","comment":"The customer support is okay.","sentiment_score":0.25}
+{"record_id":"344","user_handle":"trent_3527","comment":"Why is the fee structure so buggy?","sentiment_score":0.03}
+{"record_id":"345","user_handle":"alice_847","comment":"I think the data validation could be more polished.","sentiment_score":0.83}
+{"record_id":"346","user_handle":"peggy_5769","comment":"Why is the color scheme so expensive?","sentiment_score":0.42}
+{"record_id":"347","user_handle":"judy_4201","comment":"Why is the fee structure so intuitive?","sentiment_score":0.93}
+{"record_id":"348","user_handle":"peggy_315","comment":"The color scheme is okay.","sentiment_score":0.7}
+{"record_id":"349","user_handle":"walter_1791","comment":"The transaction speed is confusing.","sentiment_score":0.02}
+{"record_id":"350","user_handle":"bob_3205","comment":"I think the storage could be more polished.","sentiment_score":0.03}
+{"record_id":"351","user_handle":"judy_4974","comment":"Why is the color scheme so buggy?","sentiment_score":0.16}
+{"record_id":"352","user_handle":"heidi_9188","comment":"Why is the API so secure?","sentiment_score":0.43}
+{"record_id":"353","user_handle":"trent_6823","comment":"The latency is okay.","sentiment_score":0.85}
+{"record_id":"354","user_handle":"frank_6135","comment":"The API is cheap.","sentiment_score":0.62}
+{"record_id":"355","user_handle":"dave_1956","comment":"I think the fee structure could be more polished.","sentiment_score":0.42}
+{"record_id":"356","user_handle":"heidi_4991","comment":"Why is the fee structure so messy?","sentiment_score":0.07}
+{"record_id":"357","user_handle":"eve_9730","comment":"I think the UI could be more polished.","sentiment_score":0.4}
+{"record_id":"358","user_handle":"mallory_7905","comment":"I think the latency could be more polished.","sentiment_score":0.37}
+{"record_id":"359","user_handle":"mallory_7738","comment":"I think the transaction speed could be more polished.","sentiment_score":0.06}
+{"record_id":"360","user_handle":"eve_6365","comment":"I think the latency could be more polished.","sentiment_score":0.44}
+{"record_id":"361","user_handle":"heidi_2774","comment":"I think the wallet connection could be more polished.","sentiment_score":0.87}
+{"record_id":"362","user_handle":"bob_101","comment":"The storage is clean.","sentiment_score":0.73}
+{"record_id":"363","user_handle":"walter_5975","comment":"The data validation is confusing.","sentiment_score":0.18}
+{"record_id":"364","user_handle":"judy_9529","comment":"I think the mobile view could be more polished.","sentiment_score":0.13}
+{"record_id":"365","user_handle":"trent_791","comment":"Why is the color scheme so slow?","sentiment_score":0.23}
+{"record_id":"366","user_handle":"oscar_9208","comment":"I think the transaction speed could be more polished.","sentiment_score":0.69}
+{"record_id":"367","user_handle":"mallory_874","comment":"I think the latency could be more polished.","sentiment_score":0.87}
+{"record_id":"368","user_handle":"mallory_3076","comment":"I think the data validation could be more polished.","sentiment_score":0.1}
+{"record_id":"369","user_handle":"mallory_798","comment":"I think the UI could be more fast.","sentiment_score":0.82}
+{"record_id":"370","user_handle":"mallory_6029","comment":"I think the wallet connection could be more polished.","sentiment_score":0.68}
+{"record_id":"371","user_handle":"heidi_9669","comment":"The data validation is secure.","sentiment_score":0.4}
+{"record_id":"372","user_handle":"bob_3556","comment":"The documentation is cheap.","sentiment_score":0.63}
+{"record_id":"373","user_handle":"eve_9941","comment":"Why is the mobile view so okay?","sentiment_score":0.55}
+{"record_id":"374","user_handle":"trent_9554","comment":"Why is the UI so great?","sentiment_score":0.73}
+{"record_id":"375","user_handle":"trent_9004","comment":"I think the mobile view could be more polished.","sentiment_score":0.75}
+{"record_id":"376","user_handle":"oscar_5303","comment":"I think the customer support could be more polished.","sentiment_score":0.87}
+{"record_id":"377","user_handle":"walter_4617","comment":"I think the documentation could be more polished.","sentiment_score":0.33}
+{"record_id":"378","user_handle":"sybil_2038","comment":"The storage is fast.","sentiment_score":0.73}
+{"record_id":"379","user_handle":"judy_5031","comment":"The UI is intuitive.","sentiment_score":0.9}
+{"record_id":"380","user_handle":"sybil_5430","comment":"Why is the transaction speed so clean?","sentiment_score":0.93}
+{"record_id":"381","user_handle":"charlie_6705","comment":"The color scheme is expensive.","sentiment_score":0.26}
+{"record_id":"382","user_handle":"bob_9620","comment":"I think the documentation could be more polished.","sentiment_score":1}
+{"record_id":"383","user_handle":"oscar_9022","comment":"Why is the data validation so terrible?","sentiment_score":0.04}
+{"record_id":"384","user_handle":"bob_7740","comment":"I think the transaction speed could be more polished.","sentiment_score":0.68}
+{"record_id":"385","user_handle":"frank_5962","comment":"The wallet connection is awesome.","sentiment_score":0.89}
+{"record_id":"386","user_handle":"sybil_9436","comment":"The color scheme is cheap.","sentiment_score":0.09}
+{"record_id":"387","user_handle":"sybil_8856","comment":"The UI is intuitive.","sentiment_score":0.85}
+{"record_id":"388","user_handle":"oscar_4940","comment":"The storage is great.","sentiment_score":0.77}
+{"record_id":"389","user_handle":"frank_726","comment":"The data validation is terrible.","sentiment_score":0}
+{"record_id":"390","user_handle":"eve_9690","comment":"The API is fast.","sentiment_score":0.95}
+{"record_id":"391","user_handle":"peggy_7822","comment":"The fee structure is great.","sentiment_score":0.84}
+{"record_id":"392","user_handle":"bob_3712","comment":"The customer support is messy.","sentiment_score":0.2}
+{"record_id":"393","user_handle":"judy_1412","comment":"The UI is intuitive.","sentiment_score":0.8}
+{"record_id":"394","user_handle":"alice_5538","comment":"I think the wallet connection could be more polished.","sentiment_score":0.51}
+{"record_id":"395","user_handle":"alice_3116","comment":"Why is the data validation so buggy?","sentiment_score":0.26}
+{"record_id":"396","user_handle":"peggy_7315","comment":"Why is the transaction speed so buggy?","sentiment_score":0.07}
+{"record_id":"397","user_handle":"charlie_7648","comment":"The wallet connection is clean.","sentiment_score":0.94}
+{"record_id":"398","user_handle":"ivan_5916","comment":"The data validation is buggy.","sentiment_score":0.21}
+{"record_id":"399","user_handle":"sybil_9329","comment":"I think the fee structure could be more polished.","sentiment_score":0.01}
+{"record_id":"400","user_handle":"charlie_8229","comment":"Why is the UI so awesome?","sentiment_score":0.87}
+{"record_id":"401","user_handle":"judy_2633","comment":"The customer support is expensive.","sentiment_score":0.18}
+{"record_id":"402","user_handle":"trent_8645","comment":"Why is the UI so cheap?","sentiment_score":0.49}
+{"record_id":"403","user_handle":"walter_9779","comment":"I think the customer support could be more polished.","sentiment_score":0.53}
+{"record_id":"404","user_handle":"ivan_4424","comment":"The storage is expensive.","sentiment_score":0.05}
+{"record_id":"405","user_handle":"ivan_7920","comment":"The transaction speed is cheap.","sentiment_score":0.89}
+{"record_id":"406","user_handle":"alice_9946","comment":"The latency is clean.","sentiment_score":0.88}
+{"record_id":"407","user_handle":"grace_2528","comment":"The API is okay.","sentiment_score":0.47}
+{"record_id":"408","user_handle":"trent_8555","comment":"I think the customer support could be more polished.","sentiment_score":0.58}
+{"record_id":"409","user_handle":"bob_3236","comment":"The color scheme is slow.","sentiment_score":0.2}
+{"record_id":"410","user_handle":"grace_6534","comment":"Why is the color scheme so slow?","sentiment_score":0.24}
+{"record_id":"411","user_handle":"alice_6015","comment":"Why is the UI so expensive?","sentiment_score":0.96}
+{"record_id":"412","user_handle":"frank_7034","comment":"I think the customer support could be more polished.","sentiment_score":0.4}
+{"record_id":"413","user_handle":"oscar_4465","comment":"Why is the transaction speed so buggy?","sentiment_score":0.07}
+{"record_id":"414","user_handle":"mallory_6149","comment":"The mobile view is awesome.","sentiment_score":0.79}
+{"record_id":"415","user_handle":"alice_7773","comment":"I think the fee structure could be more polished.","sentiment_score":0.41}
+{"record_id":"416","user_handle":"trent_5910","comment":"Why is the fee structure so clean?","sentiment_score":0.97}
+{"record_id":"417","user_handle":"ivan_1498","comment":"The fee structure is intuitive.","sentiment_score":0.78}
+{"record_id":"418","user_handle":"ivan_8274","comment":"I think the transaction speed could be more polished.","sentiment_score":0.72}
+{"record_id":"419","user_handle":"eve_8371","comment":"Why is the API so buggy?","sentiment_score":0.14}
+{"record_id":"420","user_handle":"bob_5533","comment":"I think the data validation could be more polished.","sentiment_score":0.84}
+{"record_id":"421","user_handle":"dave_4551","comment":"Why is the API so messy?","sentiment_score":0.21}
+{"record_id":"422","user_handle":"sybil_1568","comment":"The color scheme is expensive.","sentiment_score":0.51}
+{"record_id":"423","user_handle":"ivan_2235","comment":"The color scheme is cheap.","sentiment_score":0.05}
+{"record_id":"424","user_handle":"judy_6670","comment":"The documentation is secure.","sentiment_score":0.67}
+{"record_id":"425","user_handle":"oscar_5292","comment":"The data validation is secure.","sentiment_score":0.72}
+{"record_id":"426","user_handle":"charlie_5080","comment":"I think the fee structure could be more polished.","sentiment_score":0.59}
+{"record_id":"427","user_handle":"sybil_9072","comment":"Why is the latency so secure?","sentiment_score":0.73}
+{"record_id":"428","user_handle":"bob_1312","comment":"I think the latency could be more fast.","sentiment_score":0.88}
+{"record_id":"429","user_handle":"walter_2367","comment":"I think the storage could be more polished.","sentiment_score":0.34}
+{"record_id":"430","user_handle":"bob_985","comment":"I think the mobile view could be more polished.","sentiment_score":0.61}
+{"record_id":"431","user_handle":"judy_441","comment":"The color scheme is buggy.","sentiment_score":0.07}
+{"record_id":"432","user_handle":"judy_3954","comment":"Why is the mobile view so slow?","sentiment_score":0.12}
+{"record_id":"433","user_handle":"walter_3584","comment":"I think the customer support could be more polished.","sentiment_score":0.81}
+{"record_id":"434","user_handle":"frank_891","comment":"I think the mobile view could be more polished.","sentiment_score":0.79}
+{"record_id":"435","user_handle":"walter_1324","comment":"The fee structure is confusing.","sentiment_score":0.2}
+{"record_id":"436","user_handle":"trent_174","comment":"The storage is okay.","sentiment_score":0.25}
+{"record_id":"437","user_handle":"sybil_3956","comment":"I think the customer support could be more polished.","sentiment_score":0.1}
+{"record_id":"438","user_handle":"bob_2109","comment":"I think the customer support could be more polished.","sentiment_score":0.85}
+{"record_id":"439","user_handle":"dave_1043","comment":"Why is the fee structure so expensive?","sentiment_score":0.49}
+{"record_id":"440","user_handle":"charlie_5664","comment":"Why is the storage so messy?","sentiment_score":0.05}
+{"record_id":"441","user_handle":"walter_5038","comment":"Why is the fee structure so terrible?","sentiment_score":0.08}
+{"record_id":"442","user_handle":"frank_6215","comment":"I think the color scheme could be more polished.","sentiment_score":0.23}
+{"record_id":"443","user_handle":"alice_3343","comment":"I think the API could be more polished.","sentiment_score":0.69}
+{"record_id":"444","user_handle":"dave_4914","comment":"The customer support is buggy.","sentiment_score":0.01}
+{"record_id":"445","user_handle":"grace_8099","comment":"I think the wallet connection could be more polished.","sentiment_score":0.17}
+{"record_id":"446","user_handle":"walter_2351","comment":"The customer support is awesome.","sentiment_score":0.94}
+{"record_id":"447","user_handle":"ivan_2685","comment":"The wallet connection is terrible.","sentiment_score":0.16}
+{"record_id":"448","user_handle":"frank_2267","comment":"I think the UI could be more polished.","sentiment_score":0.3}
+{"record_id":"449","user_handle":"peggy_9547","comment":"Why is the customer support so slow?","sentiment_score":0.25}
+{"record_id":"450","user_handle":"oscar_8285","comment":"Why is the customer support so messy?","sentiment_score":0.29}
+{"record_id":"451","user_handle":"grace_6299","comment":"Why is the mobile view so secure?","sentiment_score":0.07}
+{"record_id":"452","user_handle":"oscar_3395","comment":"Why is the latency so fast?","sentiment_score":0.72}
+{"record_id":"453","user_handle":"alice_9374","comment":"The customer support is confusing.","sentiment_score":0.19}
+{"record_id":"454","user_handle":"alice_21","comment":"The customer support is intuitive.","sentiment_score":0.9}
+{"record_id":"455","user_handle":"dave_1273","comment":"I think the data validation could be more polished.","sentiment_score":0.46}
+{"record_id":"456","user_handle":"bob_8916","comment":"The documentation is fast.","sentiment_score":0.7}
+{"record_id":"457","user_handle":"charlie_1621","comment":"I think the data validation could be more polished.","sentiment_score":0.45}
+{"record_id":"458","user_handle":"frank_4731","comment":"I think the wallet connection could be more polished.","sentiment_score":0.82}
+{"record_id":"459","user_handle":"alice_6384","comment":"Why is the mobile view so terrible?","sentiment_score":0.14}
+{"record_id":"460","user_handle":"mallory_450","comment":"I think the transaction speed could be more polished.","sentiment_score":0.89}
+{"record_id":"461","user_handle":"mallory_4084","comment":"Why is the UI so expensive?","sentiment_score":1}
+{"record_id":"462","user_handle":"mallory_9619","comment":"Why is the documentation so secure?","sentiment_score":0.92}
+{"record_id":"463","user_handle":"mallory_6879","comment":"Why is the data validation so fast?","sentiment_score":0.87}
+{"record_id":"464","user_handle":"alice_9572","comment":"Why is the storage so cheap?","sentiment_score":0.06}
+{"record_id":"465","user_handle":"heidi_1930","comment":"I think the API could be more polished.","sentiment_score":0.2}
+{"record_id":"466","user_handle":"oscar_7448","comment":"The data validation is terrible.","sentiment_score":0.3}
+{"record_id":"467","user_handle":"sybil_4093","comment":"The mobile view is terrible.","sentiment_score":0.15}
+{"record_id":"468","user_handle":"oscar_9524","comment":"I think the API could be more polished.","sentiment_score":0.14}
+{"record_id":"469","user_handle":"charlie_6240","comment":"I think the UI could be more polished.","sentiment_score":0.71}
+{"record_id":"470","user_handle":"judy_5112","comment":"I think the latency could be more polished.","sentiment_score":0.84}
+{"record_id":"471","user_handle":"alice_325","comment":"The latency is clean.","sentiment_score":0.75}
+{"record_id":"472","user_handle":"trent_2922","comment":"I think the UI could be more polished.","sentiment_score":0.71}
+{"record_id":"473","user_handle":"walter_1001","comment":"The storage is messy.","sentiment_score":0.1}
+{"record_id":"474","user_handle":"frank_740","comment":"I think the API could be more polished.","sentiment_score":0.07}
+{"record_id":"475","user_handle":"dave_369","comment":"I think the fee structure could be more polished.","sentiment_score":0.35}
+{"record_id":"476","user_handle":"trent_1828","comment":"Why is the fee structure so slow?","sentiment_score":0.07}
+{"record_id":"477","user_handle":"trent_2942","comment":"Why is the latency so great?","sentiment_score":0.84}
+{"record_id":"478","user_handle":"alice_7353","comment":"I think the wallet connection could be more fast.","sentiment_score":0.85}
+{"record_id":"479","user_handle":"dave_5361","comment":"The fee structure is awesome.","sentiment_score":0.87}
+{"record_id":"480","user_handle":"grace_1566","comment":"I think the mobile view could be more polished.","sentiment_score":0.81}
+{"record_id":"481","user_handle":"oscar_7223","comment":"I think the color scheme could be more polished.","sentiment_score":0.02}
+{"record_id":"482","user_handle":"heidi_9933","comment":"I think the color scheme could be more polished.","sentiment_score":0.65}
+{"record_id":"483","user_handle":"alice_9993","comment":"I think the customer support could be more polished.","sentiment_score":0.06}
+{"record_id":"484","user_handle":"oscar_7558","comment":"Why is the UI so expensive?","sentiment_score":0.88}
+{"record_id":"485","user_handle":"walter_1280","comment":"I think the UI could be more polished.","sentiment_score":0.11}
+{"record_id":"486","user_handle":"trent_1582","comment":"Why is the UI so buggy?","sentiment_score":0.12}
+{"record_id":"487","user_handle":"walter_597","comment":"I think the data validation could be more polished.","sentiment_score":0.93}
+{"record_id":"488","user_handle":"sybil_8681","comment":"I think the documentation could be more polished.","sentiment_score":0.82}
+{"record_id":"489","user_handle":"heidi_2226","comment":"The storage is intuitive.","sentiment_score":0.97}
+{"record_id":"490","user_handle":"sybil_5206","comment":"The wallet connection is secure.","sentiment_score":0.43}
+{"record_id":"491","user_handle":"peggy_5400","comment":"The wallet connection is great.","sentiment_score":0.82}
+{"record_id":"492","user_handle":"oscar_6179","comment":"Why is the storage so cheap?","sentiment_score":0.59}
+{"record_id":"493","user_handle":"frank_9197","comment":"Why is the fee structure so awesome?","sentiment_score":0.76}
+{"record_id":"494","user_handle":"grace_6483","comment":"The latency is awesome.","sentiment_score":0.73}
+{"record_id":"495","user_handle":"sybil_3470","comment":"Why is the customer support so clean?","sentiment_score":0.83}
+{"record_id":"496","user_handle":"alice_380","comment":"I think the data validation could be more polished.","sentiment_score":0.3}
+{"record_id":"497","user_handle":"ivan_9706","comment":"Why is the latency so terrible?","sentiment_score":0.05}
+{"record_id":"498","user_handle":"dave_518","comment":"The transaction speed is okay.","sentiment_score":0.56}
+{"record_id":"499","user_handle":"judy_5779","comment":"The fee structure is cheap.","sentiment_score":0.94}
+{"record_id":"500","user_handle":"frank_9983","comment":"The UI is cheap.","sentiment_score":0.25}

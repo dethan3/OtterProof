@@ -1,0 +1,501 @@
+record_id,user_handle,comment,sentiment_score
+1,dave_5047,"The UI is clean.",0.91
+2,dave_1664,"Why is the customer support so expensive?",0.96
+3,mallory_8548,"I think the wallet connection could be more polished.",0.48
+4,judy_7915,"Why is the API so okay?",0.16
+5,eve_7995,"I think the documentation could be more polished.",0.41
+6,trent_9295,"The customer support is terrible.",0.08
+7,eve_8140,"I think the latency could be more polished.",0.59
+8,charlie_6390,"The customer support is confusing.",0.01
+9,walter_6812,"I think the fee structure could be more polished.",0.18
+10,bob_3855,"Why is the mobile view so terrible?",0.1
+11,heidi_2716,"I think the UI could be more polished.",0.31
+12,alice_9165,"The storage is awesome.",0.82
+13,oscar_9078,"I think the mobile view could be more polished.",0.66
+14,dave_9559,"Why is the wallet connection so awesome?",0.83
+15,mallory_313,"Why is the API so clean?",0.78
+16,heidi_636,"I think the UI could be more polished.",0.09
+17,charlie_9116,"I think the transaction speed could be more polished.",0.13
+18,charlie_8954,"I think the documentation could be more polished.",0.88
+19,dave_4172,"I think the mobile view could be more polished.",0.77
+20,eve_8947,"Why is the transaction speed so slow?",0.24
+21,frank_1641,"Why is the documentation so buggy?",0.01
+22,grace_3674,"Why is the UI so clean?",0.89
+23,grace_6660,"Why is the transaction speed so terrible?",0.19
+24,alice_442,"I think the mobile view could be more polished.",0.23
+25,judy_6793,"The data validation is intuitive.",0.72
+26,judy_6590,"The documentation is confusing.",0.07
+27,grace_7547,"The storage is awesome.",0.72
+28,frank_8845,"Why is the fee structure so terrible?",0.11
+29,sybil_5629,"I think the fee structure could be more polished.",0.51
+30,sybil_2236,"The fee structure is slow.",0.22
+31,charlie_2247,"Why is the data validation so fast?",0.73
+32,trent_4830,"The transaction speed is clean.",0.9
+33,ivan_9022,"I think the transaction speed could be more polished.",0.75
+34,oscar_6822,"I think the storage could be more polished.",0.85
+35,trent_2723,"The color scheme is confusing.",0.09
+36,oscar_1469,"Why is the data validation so expensive?",0.06
+37,alice_5549,"The wallet connection is messy.",0.02
+38,mallory_5132,"I think the UI could be more polished.",0.98
+39,heidi_6919,"Why is the documentation so secure?",0.12
+40,ivan_2756,"Why is the latency so clean?",0.86
+41,bob_5699,"The wallet connection is clean.",0.91
+42,judy_1265,"Why is the documentation so great?",0.84
+43,oscar_1736,"I think the API could be more polished.",0.7
+44,oscar_9208,"I think the wallet connection could be more polished.",0.98
+45,frank_828,"Why is the data validation so fast?",0.93
+46,mallory_800,"Why is the documentation so messy?",0.06
+47,walter_4558,"The wallet connection is confusing.",0.12
+48,mallory_4557,"I think the fee structure could be more polished.",0.37
+49,mallory_6212,"Why is the transaction speed so fast?",0.92
+50,judy_1760,"Why is the fee structure so okay?",0.61
+51,sybil_9653,"Why is the storage so confusing?",0.1
+52,mallory_9747,"The storage is intuitive.",0.92
+53,dave_5107,"I think the data validation could be more polished.",0.76
+54,heidi_7983,"Why is the API so clean?",0.84
+55,oscar_2755,"The data validation is buggy.",0.18
+56,judy_1344,"The mobile view is intuitive.",0.93
+57,eve_6862,"Why is the wallet connection so buggy?",0.27
+58,alice_7792,"I think the data validation could be more polished.",0.54
+59,grace_2500,"Why is the fee structure so slow?",0.06
+60,judy_7207,"Why is the documentation so okay?",0.23
+61,oscar_3107,"The storage is intuitive.",0.83
+62,walter_3996,"I think the customer support could be more fast.",0.86
+63,charlie_6110,"I think the latency could be more polished.",0.53
+64,walter_2707,"Why is the wallet connection so expensive?",0.66
+65,sybil_876,"Why is the customer support so awesome?",0.92
+66,judy_2040,"I think the fee structure could be more polished.",0.95
+67,dave_81,"I think the transaction speed could be more polished.",0.31
+68,bob_6930,"Why is the wallet connection so messy?",0.26
+69,oscar_9852,"The latency is intuitive.",0.88
+70,sybil_101,"I think the wallet connection could be more polished.",0.28
+71,heidi_1214,"I think the API could be more polished.",0.04
+72,mallory_1543,"The API is confusing.",0.05
+73,dave_3286,"I think the mobile view could be more polished.",0.43
+74,grace_525,"The customer support is terrible.",0.1
+75,peggy_7451,"The documentation is awesome.",0.71
+76,grace_8759,"I think the fee structure could be more polished.",0.8
+77,sybil_9314,"The latency is expensive.",0.33
+78,grace_2033,"I think the color scheme could be more fast.",0.91
+79,walter_4250,"Why is the customer support so buggy?",0.05
+80,dave_1096,"I think the latency could be more polished.",0.41
+81,walter_7079,"The storage is buggy.",0.05
+82,heidi_5974,"Why is the transaction speed so confusing?",0.1
+83,mallory_2323,"The latency is awesome.",0.73
+84,dave_567,"Why is the transaction speed so fast?",0.83
+85,mallory_7633,"I think the storage could be more polished.",0.45
+86,dave_6070,"Why is the data validation so secure?",0.18
+87,alice_9492,"I think the color scheme could be more polished.",0.9
+88,ivan_4195,"I think the storage could be more polished.",0.26
+89,trent_9059,"The latency is confusing.",0.1
+90,oscar_4046,"Why is the storage so fast?",0.79
+91,oscar_3110,"The UI is secure.",0.36
+92,bob_4762,"I think the UI could be more polished.",0.19
+93,ivan_7438,"The transaction speed is slow.",0.23
+94,alice_8379,"I think the mobile view could be more polished.",0.69
+95,heidi_6000,"The color scheme is buggy.",0.29
+96,frank_9319,"I think the data validation could be more polished.",0.83
+97,mallory_4415,"The API is okay.",0.93
+98,heidi_9295,"I think the storage could be more polished.",0.88
+99,judy_9146,"Why is the fee structure so slow?",0.06
+100,ivan_9952,"The color scheme is great.",0.92
+101,judy_7580,"I think the customer support could be more fast.",0.97
+102,dave_7,"I think the latency could be more polished.",0.54
+103,ivan_8866,"The documentation is fast.",0.89
+104,ivan_2402,"The storage is messy.",0.18
+105,bob_7820,"I think the transaction speed could be more polished.",0.38
+106,oscar_319,"I think the UI could be more polished.",0.54
+107,ivan_9066,"The data validation is fast.",0.86
+108,bob_389,"The UI is cheap.",0.32
+109,heidi_7049,"I think the customer support could be more polished.",0.35
+110,oscar_2838,"I think the documentation could be more polished.",0.7
+111,grace_5090,"The data validation is intuitive.",0.8
+112,eve_9623,"The data validation is great.",0.78
+113,alice_5722,"Why is the customer support so intuitive?",0.88
+114,charlie_6533,"The color scheme is confusing.",0.02
+115,dave_2168,"Why is the fee structure so intuitive?",0.92
+116,trent_8531,"I think the storage could be more fast.",0.74
+117,frank_445,"Why is the color scheme so terrible?",0.12
+118,grace_3930,"Why is the customer support so expensive?",0.31
+119,judy_6002,"Why is the API so messy?",0.24
+120,peggy_6246,"Why is the wallet connection so confusing?",0.04
+121,eve_6408,"Why is the mobile view so clean?",0.77
+122,charlie_2760,"The customer support is awesome.",0.9
+123,eve_3446,"Why is the wallet connection so intuitive?",0.81
+124,walter_2977,"Why is the transaction speed so slow?",0.13
+125,frank_5463,"I think the transaction speed could be more polished.",0.46
+126,mallory_5966,"Why is the documentation so messy?",0.1
+127,walter_6788,"The API is buggy.",0.22
+128,peggy_4387,"Why is the mobile view so awesome?",0.93
+129,ivan_6997,"I think the latency could be more polished.",0.26
+130,sybil_7385,"I think the wallet connection could be more polished.",0.11
+131,walter_5445,"I think the documentation could be more polished.",0.65
+132,judy_4310,"Why is the color scheme so great?",0.88
+133,mallory_7445,"I think the transaction speed could be more polished.",0.74
+134,heidi_8959,"Why is the wallet connection so fast?",0.94
+135,peggy_6977,"I think the fee structure could be more polished.",0.7
+136,heidi_474,"I think the latency could be more polished.",0.19
+137,frank_3060,"The storage is slow.",0.03
+138,charlie_9153,"I think the UI could be more polished.",0.71
+139,heidi_1275,"I think the latency could be more polished.",0.02
+140,charlie_8347,"The wallet connection is expensive.",0.41
+141,eve_7069,"The wallet connection is awesome.",0.88
+142,dave_5700,"The mobile view is okay.",0.9
+143,trent_5966,"The fee structure is intuitive.",0.87
+144,trent_4925,"Why is the documentation so fast?",0.79
+145,ivan_3582,"Why is the storage so messy?",0.14
+146,heidi_1432,"I think the latency could be more polished.",0.03
+147,heidi_8829,"The API is fast.",0.92
+148,bob_6112,"I think the wallet connection could be more polished.",0.02
+149,walter_2753,"Why is the transaction speed so okay?",0.58
+150,eve_6829,"The customer support is slow.",0.19
+151,peggy_9017,"I think the data validation could be more polished.",0.25
+152,heidi_4771,"The wallet connection is fast.",0.79
+153,ivan_1213,"The API is buggy.",0.27
+154,bob_8233,"The storage is messy.",0.28
+155,bob_16,"I think the wallet connection could be more polished.",0.46
+156,ivan_1783,"I think the latency could be more polished.",0.78
+157,walter_5060,"The wallet connection is clean.",0.7
+158,alice_40,"I think the data validation could be more polished.",0.02
+159,peggy_2697,"I think the customer support could be more polished.",0.63
+160,walter_1554,"I think the mobile view could be more polished.",0.32
+161,bob_5721,"Why is the wallet connection so confusing?",0.19
+162,charlie_4801,"Why is the UI so okay?",0.8
+163,heidi_6690,"I think the latency could be more polished.",0.6
+164,frank_3934,"I think the documentation could be more polished.",0.78
+165,alice_1409,"I think the latency could be more polished.",0.03
+166,peggy_9648,"The color scheme is secure.",0.7
+167,bob_708,"Why is the color scheme so secure?",0.89
+168,trent_9503,"Why is the data validation so clean?",0.96
+169,heidi_4583,"I think the documentation could be more polished.",0.55
+170,heidi_3943,"I think the UI could be more polished.",0.26
+171,heidi_4689,"I think the mobile view could be more polished.",0.91
+172,charlie_6140,"The latency is confusing.",0.11
+173,walter_1590,"Why is the wallet connection so awesome?",0.81
+174,peggy_8250,"I think the storage could be more polished.",0.52
+175,bob_2651,"I think the documentation could be more polished.",0.77
+176,eve_4655,"The API is messy.",0.1
+177,peggy_5656,"The API is confusing.",0.28
+178,walter_2965,"I think the color scheme could be more polished.",0.15
+179,walter_878,"Why is the UI so messy?",0.22
+180,peggy_6246,"The latency is expensive.",0.65
+181,sybil_3944,"Why is the fee structure so intuitive?",0.71
+182,judy_9041,"I think the API could be more polished.",0.55
+183,eve_4952,"The UI is great.",0.81
+184,grace_8195,"The storage is slow.",0.03
+185,dave_2924,"I think the documentation could be more polished.",0.1
+186,walter_5957,"I think the latency could be more polished.",0.41
+187,judy_698,"The documentation is secure.",0.09
+188,mallory_5905,"I think the latency could be more polished.",0.76
+189,charlie_3358,"The latency is messy.",0.2
+190,charlie_3219,"Why is the API so secure?",0.15
+191,peggy_3453,"The transaction speed is slow.",0.24
+192,grace_8000,"The UI is messy.",0.26
+193,heidi_9158,"The color scheme is confusing.",0.07
+194,judy_7740,"Why is the latency so secure?",0.17
+195,oscar_9169,"Why is the wallet connection so okay?",0.9
+196,frank_9880,"I think the mobile view could be more polished.",0.39
+197,peggy_873,"The transaction speed is cheap.",0.54
+198,mallory_5458,"Why is the wallet connection so great?",0.99
+199,oscar_6805,"Why is the color scheme so cheap?",0.49
+200,eve_606,"Why is the wallet connection so awesome?",0.95
+201,grace_9790,"I think the API could be more polished.",0.94
+202,bob_3515,"I think the fee structure could be more polished.",0.61
+203,alice_5393,"Why is the latency so okay?",0.62
+204,alice_5270,"The fee structure is confusing.",0.15
+205,charlie_451,"The storage is intuitive.",0.98
+206,ivan_5916,"I think the color scheme could be more polished.",0.34
+207,dave_2484,"I think the fee structure could be more polished.",0.16
+208,grace_8869,"I think the transaction speed could be more polished.",0.78
+209,peggy_3774,"The mobile view is terrible.",0.12
+210,ivan_9309,"I think the storage could be more polished.",0.05
+211,peggy_3606,"Why is the latency so expensive?",0.47
+212,trent_1084,"I think the data validation could be more polished.",0.44
+213,sybil_8666,"I think the transaction speed could be more fast.",0.9
+214,charlie_4787,"I think the documentation could be more polished.",0.9
+215,mallory_6340,"The transaction speed is clean.",0.85
+216,alice_1186,"The UI is awesome.",0.87
+217,mallory_3577,"Why is the UI so fast?",0.8
+218,eve_5531,"I think the UI could be more polished.",0.89
+219,walter_9986,"Why is the UI so secure?",0.21
+220,heidi_5217,"Why is the documentation so intuitive?",0.74
+221,bob_5143,"Why is the color scheme so messy?",0.29
+222,walter_2210,"Why is the API so expensive?",0.05
+223,peggy_6932,"I think the documentation could be more polished.",0.59
+224,mallory_3290,"Why is the color scheme so clean?",0.71
+225,ivan_7254,"Why is the mobile view so okay?",0.65
+226,dave_12,"I think the latency could be more polished.",0.61
+227,trent_6597,"I think the latency could be more polished.",0.82
+228,dave_7446,"I think the fee structure could be more polished.",0.52
+229,ivan_8354,"Why is the UI so expensive?",0.39
+230,grace_2889,"The wallet connection is okay.",0.72
+231,grace_6820,"Why is the customer support so okay?",0.37
+232,eve_8750,"Why is the UI so terrible?",0.17
+233,peggy_1526,"I think the UI could be more polished.",0.83
+234,grace_4808,"The data validation is slow.",0.22
+235,mallory_2834,"Why is the wallet connection so awesome?",0.94
+236,sybil_4452,"The color scheme is slow.",0.17
+237,walter_416,"Why is the UI so expensive?",0.2
+238,walter_8484,"I think the data validation could be more polished.",0.01
+239,ivan_4209,"Why is the storage so intuitive?",0.71
+240,mallory_9933,"Why is the color scheme so clean?",0.81
+241,peggy_1010,"I think the mobile view could be more polished.",0.82
+242,sybil_8873,"The transaction speed is buggy.",0.23
+243,mallory_8000,"I think the storage could be more fast.",0.84
+244,eve_2740,"Why is the UI so secure?",0.2
+245,alice_8702,"I think the UI could be more polished.",0.95
+246,sybil_209,"Why is the storage so terrible?",0.1
+247,walter_5135,"I think the UI could be more polished.",0.51
+248,judy_5041,"The transaction speed is clean.",0.8
+249,heidi_6986,"The data validation is terrible.",0.28
+250,frank_1856,"Why is the storage so buggy?",0.04
+251,sybil_7398,"The UI is confusing.",0.24
+252,walter_7729,"I think the color scheme could be more polished.",0.13
+253,heidi_4138,"The color scheme is fast.",0.97
+254,heidi_8324,"Why is the transaction speed so clean?",0.82
+255,peggy_4838,"Why is the API so messy?",0.24
+256,heidi_7633,"I think the data validation could be more polished.",0.52
+257,alice_5550,"The storage is expensive.",0.14
+258,bob_6491,"Why is the transaction speed so terrible?",0.27
+259,alice_987,"The documentation is slow.",0.2
+260,peggy_7147,"I think the wallet connection could be more polished.",0.01
+261,grace_7293,"I think the UI could be more polished.",0.55
+262,grace_6008,"The transaction speed is confusing.",0.08
+263,eve_4178,"I think the transaction speed could be more polished.",0.92
+264,walter_8444,"Why is the API so cheap?",0.96
+265,bob_2603,"I think the wallet connection could be more polished.",0.71
+266,sybil_982,"Why is the documentation so secure?",0.83
+267,trent_5876,"The UI is confusing.",0.29
+268,walter_1113,"Why is the fee structure so intuitive?",0.74
+269,dave_3758,"Why is the wallet connection so awesome?",0.75
+270,trent_7031,"Why is the UI so intuitive?",0.81
+271,alice_1076,"I think the storage could be more polished.",0.77
+272,walter_7843,"I think the UI could be more fast.",0.97
+273,eve_9806,"Why is the latency so cheap?",0.12
+274,heidi_5288,"Why is the API so slow?",0.03
+275,bob_7251,"The latency is buggy.",0.06
+276,grace_7992,"Why is the mobile view so okay?",0.58
+277,peggy_8702,"I think the mobile view could be more fast.",0.97
+278,walter_9545,"Why is the fee structure so fast?",0.81
+279,sybil_5872,"I think the color scheme could be more polished.",0.9
+280,mallory_7353,"The transaction speed is great.",0.84
+281,oscar_5157,"I think the customer support could be more polished.",0.24
+282,walter_9628,"I think the latency could be more polished.",0.63
+283,judy_4675,"I think the mobile view could be more polished.",0.85
+284,sybil_3941,"I think the customer support could be more polished.",0.62
+285,alice_6147,"Why is the wallet connection so terrible?",0.05
+286,charlie_9985,"I think the fee structure could be more polished.",0.36
+287,ivan_6248,"Why is the documentation so fast?",0.92
+288,heidi_7041,"I think the storage could be more polished.",0.06
+289,oscar_5337,"The color scheme is intuitive.",0.86
+290,bob_3368,"The latency is intuitive.",0.9
+291,trent_1206,"I think the data validation could be more polished.",0.73
+292,oscar_5907,"I think the customer support could be more polished.",0.7
+293,frank_4424,"Why is the fee structure so fast?",0.92
+294,judy_2362,"I think the UI could be more polished.",0.05
+295,heidi_8418,"Why is the color scheme so buggy?",0.27
+296,mallory_8273,"Why is the latency so secure?",0.59
+297,bob_7423,"Why is the API so terrible?",0.17
+298,alice_2332,"I think the fee structure could be more polished.",0.34
+299,trent_1543,"Why is the wallet connection so awesome?",0.97
+300,charlie_7278,"I think the fee structure could be more polished.",0.37
+301,charlie_3544,"I think the storage could be more polished.",0.25
+302,eve_5631,"The wallet connection is slow.",0.06
+303,sybil_3866,"Why is the fee structure so cheap?",0.9
+304,trent_5156,"I think the API could be more polished.",0.67
+305,dave_1093,"I think the wallet connection could be more polished.",0.18
+306,bob_9329,"Why is the UI so fast?",0.81
+307,oscar_369,"I think the API could be more polished.",0.08
+308,dave_905,"I think the latency could be more polished.",0.36
+309,grace_6507,"Why is the transaction speed so clean?",0.99
+310,grace_5304,"I think the mobile view could be more polished.",0.7
+311,dave_3898,"Why is the customer support so awesome?",1
+312,frank_5712,"Why is the data validation so terrible?",0.09
+313,oscar_7081,"The color scheme is terrible.",0.14
+314,judy_4327,"I think the API could be more polished.",0.36
+315,eve_4546,"Why is the customer support so confusing?",0.08
+316,sybil_3851,"Why is the transaction speed so slow?",0.21
+317,sybil_9663,"I think the customer support could be more fast.",0.76
+318,frank_3145,"Why is the fee structure so confusing?",0.12
+319,ivan_9145,"The latency is cheap.",0.25
+320,eve_867,"The latency is awesome.",0.86
+321,alice_6701,"Why is the mobile view so confusing?",0.27
+322,trent_1392,"Why is the documentation so secure?",0.29
+323,charlie_7805,"I think the API could be more polished.",0.04
+324,peggy_6955,"Why is the mobile view so fast?",0.73
+325,charlie_5379,"Why is the color scheme so fast?",0.85
+326,frank_1463,"I think the storage could be more polished.",0.94
+327,alice_2280,"I think the storage could be more polished.",0.92
+328,mallory_6345,"I think the data validation could be more polished.",0.92
+329,grace_6293,"I think the wallet connection could be more polished.",0.01
+330,charlie_5340,"Why is the customer support so buggy?",0.03
+331,mallory_6913,"I think the API could be more polished.",0.1
+332,heidi_2320,"I think the API could be more polished.",0.5
+333,eve_3792,"Why is the UI so terrible?",0.11
+334,eve_6746,"The storage is secure.",0.5
+335,eve_2783,"I think the transaction speed could be more polished.",0.73
+336,frank_4437,"Why is the storage so intuitive?",0.93
+337,alice_4890,"I think the data validation could be more polished.",0.86
+338,judy_4490,"Why is the documentation so clean?",0.78
+339,bob_5540,"The wallet connection is confusing.",0.23
+340,ivan_2933,"Why is the data validation so cheap?",0.84
+341,oscar_1609,"Why is the documentation so buggy?",0.05
+342,walter_3240,"I think the fee structure could be more polished.",0.85
+343,frank_9562,"The customer support is okay.",0.25
+344,trent_3527,"Why is the fee structure so buggy?",0.03
+345,alice_847,"I think the data validation could be more polished.",0.83
+346,peggy_5769,"Why is the color scheme so expensive?",0.42
+347,judy_4201,"Why is the fee structure so intuitive?",0.93
+348,peggy_315,"The color scheme is okay.",0.7
+349,walter_1791,"The transaction speed is confusing.",0.02
+350,bob_3205,"I think the storage could be more polished.",0.03
+351,judy_4974,"Why is the color scheme so buggy?",0.16
+352,heidi_9188,"Why is the API so secure?",0.43
+353,trent_6823,"The latency is okay.",0.85
+354,frank_6135,"The API is cheap.",0.62
+355,dave_1956,"I think the fee structure could be more polished.",0.42
+356,heidi_4991,"Why is the fee structure so messy?",0.07
+357,eve_9730,"I think the UI could be more polished.",0.4
+358,mallory_7905,"I think the latency could be more polished.",0.37
+359,mallory_7738,"I think the transaction speed could be more polished.",0.06
+360,eve_6365,"I think the latency could be more polished.",0.44
+361,heidi_2774,"I think the wallet connection could be more polished.",0.87
+362,bob_101,"The storage is clean.",0.73
+363,walter_5975,"The data validation is confusing.",0.18
+364,judy_9529,"I think the mobile view could be more polished.",0.13
+365,trent_791,"Why is the color scheme so slow?",0.23
+366,oscar_9208,"I think the transaction speed could be more polished.",0.69
+367,mallory_874,"I think the latency could be more polished.",0.87
+368,mallory_3076,"I think the data validation could be more polished.",0.1
+369,mallory_798,"I think the UI could be more fast.",0.82
+370,mallory_6029,"I think the wallet connection could be more polished.",0.68
+371,heidi_9669,"The data validation is secure.",0.4
+372,bob_3556,"The documentation is cheap.",0.63
+373,eve_9941,"Why is the mobile view so okay?",0.55
+374,trent_9554,"Why is the UI so great?",0.73
+375,trent_9004,"I think the mobile view could be more polished.",0.75
+376,oscar_5303,"I think the customer support could be more polished.",0.87
+377,walter_4617,"I think the documentation could be more polished.",0.33
+378,sybil_2038,"The storage is fast.",0.73
+379,judy_5031,"The UI is intuitive.",0.9
+380,sybil_5430,"Why is the transaction speed so clean?",0.93
+381,charlie_6705,"The color scheme is expensive.",0.26
+382,bob_9620,"I think the documentation could be more polished.",1
+383,oscar_9022,"Why is the data validation so terrible?",0.04
+384,bob_7740,"I think the transaction speed could be more polished.",0.68
+385,frank_5962,"The wallet connection is awesome.",0.89
+386,sybil_9436,"The color scheme is cheap.",0.09
+387,sybil_8856,"The UI is intuitive.",0.85
+388,oscar_4940,"The storage is great.",0.77
+389,frank_726,"The data validation is terrible.",0
+390,eve_9690,"The API is fast.",0.95
+391,peggy_7822,"The fee structure is great.",0.84
+392,bob_3712,"The customer support is messy.",0.2
+393,judy_1412,"The UI is intuitive.",0.8
+394,alice_5538,"I think the wallet connection could be more polished.",0.51
+395,alice_3116,"Why is the data validation so buggy?",0.26
+396,peggy_7315,"Why is the transaction speed so buggy?",0.07
+397,charlie_7648,"The wallet connection is clean.",0.94
+398,ivan_5916,"The data validation is buggy.",0.21
+399,sybil_9329,"I think the fee structure could be more polished.",0.01
+400,charlie_8229,"Why is the UI so awesome?",0.87
+401,judy_2633,"The customer support is expensive.",0.18
+402,trent_8645,"Why is the UI so cheap?",0.49
+403,walter_9779,"I think the customer support could be more polished.",0.53
+404,ivan_4424,"The storage is expensive.",0.05
+405,ivan_7920,"The transaction speed is cheap.",0.89
+406,alice_9946,"The latency is clean.",0.88
+407,grace_2528,"The API is okay.",0.47
+408,trent_8555,"I think the customer support could be more polished.",0.58
+409,bob_3236,"The color scheme is slow.",0.2
+410,grace_6534,"Why is the color scheme so slow?",0.24
+411,alice_6015,"Why is the UI so expensive?",0.96
+412,frank_7034,"I think the customer support could be more polished.",0.4
+413,oscar_4465,"Why is the transaction speed so buggy?",0.07
+414,mallory_6149,"The mobile view is awesome.",0.79
+415,alice_7773,"I think the fee structure could be more polished.",0.41
+416,trent_5910,"Why is the fee structure so clean?",0.97
+417,ivan_1498,"The fee structure is intuitive.",0.78
+418,ivan_8274,"I think the transaction speed could be more polished.",0.72
+419,eve_8371,"Why is the API so buggy?",0.14
+420,bob_5533,"I think the data validation could be more polished.",0.84
+421,dave_4551,"Why is the API so messy?",0.21
+422,sybil_1568,"The color scheme is expensive.",0.51
+423,ivan_2235,"The color scheme is cheap.",0.05
+424,judy_6670,"The documentation is secure.",0.67
+425,oscar_5292,"The data validation is secure.",0.72
+426,charlie_5080,"I think the fee structure could be more polished.",0.59
+427,sybil_9072,"Why is the latency so secure?",0.73
+428,bob_1312,"I think the latency could be more fast.",0.88
+429,walter_2367,"I think the storage could be more polished.",0.34
+430,bob_985,"I think the mobile view could be more polished.",0.61
+431,judy_441,"The color scheme is buggy.",0.07
+432,judy_3954,"Why is the mobile view so slow?",0.12
+433,walter_3584,"I think the customer support could be more polished.",0.81
+434,frank_891,"I think the mobile view could be more polished.",0.79
+435,walter_1324,"The fee structure is confusing.",0.2
+436,trent_174,"The storage is okay.",0.25
+437,sybil_3956,"I think the customer support could be more polished.",0.1
+438,bob_2109,"I think the customer support could be more polished.",0.85
+439,dave_1043,"Why is the fee structure so expensive?",0.49
+440,charlie_5664,"Why is the storage so messy?",0.05
+441,walter_5038,"Why is the fee structure so terrible?",0.08
+442,frank_6215,"I think the color scheme could be more polished.",0.23
+443,alice_3343,"I think the API could be more polished.",0.69
+444,dave_4914,"The customer support is buggy.",0.01
+445,grace_8099,"I think the wallet connection could be more polished.",0.17
+446,walter_2351,"The customer support is awesome.",0.94
+447,ivan_2685,"The wallet connection is terrible.",0.16
+448,frank_2267,"I think the UI could be more polished.",0.3
+449,peggy_9547,"Why is the customer support so slow?",0.25
+450,oscar_8285,"Why is the customer support so messy?",0.29
+451,grace_6299,"Why is the mobile view so secure?",0.07
+452,oscar_3395,"Why is the latency so fast?",0.72
+453,alice_9374,"The customer support is confusing.",0.19
+454,alice_21,"The customer support is intuitive.",0.9
+455,dave_1273,"I think the data validation could be more polished.",0.46
+456,bob_8916,"The documentation is fast.",0.7
+457,charlie_1621,"I think the data validation could be more polished.",0.45
+458,frank_4731,"I think the wallet connection could be more polished.",0.82
+459,alice_6384,"Why is the mobile view so terrible?",0.14
+460,mallory_450,"I think the transaction speed could be more polished.",0.89
+461,mallory_4084,"Why is the UI so expensive?",1
+462,mallory_9619,"Why is the documentation so secure?",0.92
+463,mallory_6879,"Why is the data validation so fast?",0.87
+464,alice_9572,"Why is the storage so cheap?",0.06
+465,heidi_1930,"I think the API could be more polished.",0.2
+466,oscar_7448,"The data validation is terrible.",0.3
+467,sybil_4093,"The mobile view is terrible.",0.15
+468,oscar_9524,"I think the API could be more polished.",0.14
+469,charlie_6240,"I think the UI could be more polished.",0.71
+470,judy_5112,"I think the latency could be more polished.",0.84
+471,alice_325,"The latency is clean.",0.75
+472,trent_2922,"I think the UI could be more polished.",0.71
+473,walter_1001,"The storage is messy.",0.1
+474,frank_740,"I think the API could be more polished.",0.07
+475,dave_369,"I think the fee structure could be more polished.",0.35
+476,trent_1828,"Why is the fee structure so slow?",0.07
+477,trent_2942,"Why is the latency so great?",0.84
+478,alice_7353,"I think the wallet connection could be more fast.",0.85
+479,dave_5361,"The fee structure is awesome.",0.87
+480,grace_1566,"I think the mobile view could be more polished.",0.81
+481,oscar_7223,"I think the color scheme could be more polished.",0.02
+482,heidi_9933,"I think the color scheme could be more polished.",0.65
+483,alice_9993,"I think the customer support could be more polished.",0.06
+484,oscar_7558,"Why is the UI so expensive?",0.88
+485,walter_1280,"I think the UI could be more polished.",0.11
+486,trent_1582,"Why is the UI so buggy?",0.12
+487,walter_597,"I think the data validation could be more polished.",0.93
+488,sybil_8681,"I think the documentation could be more polished.",0.82
+489,heidi_2226,"The storage is intuitive.",0.97
+490,sybil_5206,"The wallet connection is secure.",0.43
+491,peggy_5400,"The wallet connection is great.",0.82
+492,oscar_6179,"Why is the storage so cheap?",0.59
+493,frank_9197,"Why is the fee structure so awesome?",0.76
+494,grace_6483,"The latency is awesome.",0.73
+495,sybil_3470,"Why is the customer support so clean?",0.83
+496,alice_380,"I think the data validation could be more polished.",0.3
+497,ivan_9706,"Why is the latency so terrible?",0.05
+498,dave_518,"The transaction speed is okay.",0.56
+499,judy_5779,"The fee structure is cheap.",0.94
+500,frank_9983,"The UI is cheap.",0.25
