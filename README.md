@@ -17,12 +17,12 @@ The project has been optimized into a lean, decentralized architecture:
 
 ```mermaid
 graph LR
-    User[User / Data Provider] -->|Uploads Data| Web[Next.js dApp]
-    Web -->|1. Store Blob| Walrus[Walrus Storage]
-    Walrus -->|Blob ID| Web
-    Web -->|2. Validate (Tusk SDK)| Tusk[Local Validation Engine]
-    Tusk -->|3. Build Transaction| Wallet[Sui Wallet]
-    Wallet -->|4. Sign & Mint| Sui[Sui Blockchain]
+    User["User / Data Provider"] -->|"Uploads Data"| Web["Next.js dApp"]
+    Web -->|"1. Store Blob"| Walrus["Walrus Storage"]
+    Walrus -->|"Blob ID"| Web
+    Web -->|"2. Validate (Tusk SDK)"| Tusk["Local Validation Engine"]
+    Tusk -->|"3. Build Transaction"| Wallet["Sui Wallet"]
+    Wallet -->|"4. Sign & Mint"| Sui["Sui Blockchain"]
 ```
 
 ## Project Structure
