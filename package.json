@@ -14,9 +14,5 @@
     "test:api": "pnpm --filter api test",
     "typecheck": "pnpm -r typecheck",
     "format": "pnpm -r format"
-  },
-  "engines": {
-    "node": ">=18.17.0"
-  },
-  "packageManager": "pnpm@9.15.9"
+  }
 }
