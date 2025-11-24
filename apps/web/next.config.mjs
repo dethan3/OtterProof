@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',
+  // output: 'export', // Removed: Static export doesn't support API Routes
   images: {
     unoptimized: true,
   },
