@@ -14,5 +14,6 @@
     "test:api": "pnpm --filter api test",
     "typecheck": "pnpm -r typecheck",
     "format": "pnpm -r format"
-  }
+  },
+  "packageManager": "pnpm@9.15.9"
 }
